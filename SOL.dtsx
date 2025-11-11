@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="SOL"
   DTS:PackageType="5"
-  DTS:VersionBuild="76"
-  DTS:VersionGUID="{46B09B22-3EDA-4A24-9D1C-116F50ECC8D5}">
+  DTS:VersionBuild="117"
+  DTS:VersionGUID="{8EC6FCE0-699B-4E04-B922-C5790B29036E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAt8SoWp0jEki4ZDPexRA1YAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADUYtD8qgxL9pUJdi1MB/8gZnXkCKB4M4YsaDSBFyNTLwAAAAAOgAAAAAIAACAAAADcR8VXfpHj1t75zm6DqPYLhp4PfoHinILuv3FPaJD9OSAAAAAyg7JBJzcjvLPTwFJto8+YCUWlF1/mYv/15k3DH16a/kAAAAAZpFtS5cNpIGI2/EsfQXxahJG8hCdLzeoX11t4WOa3PA/SjLVezoR2/jgIFOe09098tLsCZ0uA5tqKu7XMTAbr</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAt8SoWp0jEki4ZDPexRA1YAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAI4S2JsJK8OobLdMqYowwz9+HpQ3o69EeYZ5vDwMLligAAAAAOgAAAAAIAACAAAACxrKgx4fPtVdyXYF/GagmmtlTkkUhVbZjucdHMG77lGSAAAACRgjUiEUBYKOUuqM2fAHgumK9OihmGFioVvc83x7FjMkAAAADsZX5nnGqJwJCEeeCcSSLOZ6JCEckgIudy9gVktyVehN0kkYostqmhVaXHAkxUk1u4jJ6l43akI1DHDmZld2Rf</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -46,7 +46,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAt8SoWp0jEki4ZDPexRA1YAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABcI6rPzlsCRgYmZSpmzJ1za7ZongZ0fhUZ+Ywy9GA+LAAAAAAOgAAAAAIAACAAAADr7MAQQPqp/chJdxjyX/tCYsymbyYxtcxyNrNIz/f9mSAAAAA5XQ0JxQgEawlL65Vu9HDdK1VrY3Hx2wy1AzNn2WeKXUAAAAAG9Uk4Fs3hlLprVHB01Tp0wOCJSfwjWNku7Um3l56g6bvPEJxu6RboZBHNEhChSIxEu16v3oxlqKebyNSQ7gGa</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAt8SoWp0jEki4ZDPexRA1YAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAB38PNf6g6TIPB/CkVRqgBnrfyenEqT5nLR0Ms+/j7WtQAAAAAOgAAAAAIAACAAAAD9uBo/N/STBiHFCEvGa6IpACWV9ibFkVca8OQxMedM2CAAAAAuQpGkw5YLOEoYtuTajHV/3F6TcN01K03mE+sguAXFSEAAAADogWWMb1PGXeu5LwTnqNxdPwzP5vG5rw5p0zjFirKwrbZYnZn6qbi9bpbzc41/STdEyHtaz4TY4jByKRLtdKqx</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -61,7 +61,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAt8SoWp0jEki4ZDPexRA1YAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADIOvMFmWDHjhHuDbt0p8Kc6OvTshwkxcOH1rc7wdr/SQAAAAAOgAAAAAIAACAAAAB4p/x9K2+d2a6+ETiKkasZWervAaY4SSL7um7rPT2L1SAAAADvCPRHwJ9owna1mfum2j1jiNzg8pybbVUbM8zETcKBqUAAAADWwupbk63BKTPa+vXtg/SQ7A7jyMsJWUOfZWPXw9huarppgWkv/EMocmHuGmxuwjsmfHz5TmIKqnAytWLbD6YN</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAt8SoWp0jEki4ZDPexRA1YAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABB6Fy5ImuGBs9pd/axqu9gK5KyZ5muS2+06nheQQPENwAAAAAOgAAAAAIAACAAAAAsLn8fDqT/s6X/sawT0RvRvFEZZ7SoGTQGsEcN/CkpgiAAAACVt/2ASzsvtl5725jnF0i/GdoMCPU8dXPdZMfj1U6Rl0AAAAAoq+nEQC2qJJr49oc8CV0N+mANeuWjNz+i0WcrwX6uhjAXgLah/QgC5XTg1l7w6t/x2FGg+FSQSI83olv/yZe8</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -128,7 +128,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="SBU">
       <DTS:VariableValue
-        DTS:DataType="8">EFL</DTS:VariableValue>
+        DTS:DataType="8">ABCDEFGH</DTS:VariableValue>
     </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>
@@ -160,14 +160,14 @@
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Execute SQL Task"
-          DTS:ThreadHint="2">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:PropertyExpression
             DTS:Name="SqlStatementSource">"insert into test_table (SBU, ConnectionString, CreatedDateTime) values ('"+ @[User::SBU] +"', '"+ @[User::ConnectionString] +"', GETDATE()); "</DTS:PropertyExpression>
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
               SQLTask:Connection="{7B0ED744-24EA-4744-ACF9-8BDE371A4DAB}"
-              SQLTask:SqlStatementSource="insert into test_table (SBU, ConnectionString, CreatedDateTime) values ('EFL', 'Data Source=192.168.51.227:1521/efl_test;User ID=efl_user;Password=efltest2025', GETDATE()); " xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+              SQLTask:SqlStatementSource="insert into test_table (SBU, ConnectionString, CreatedDateTime) values ('ABCDEFGH', 'Data Source=192.168.51.227:1521/efl_test;User ID=efl_user;Password=efltest2025', GETDATE()); " xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
         </DTS:Executable>
         <DTS:Executable
@@ -218,8 +218,8 @@
               DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
               <DTS:Variables />
               <DTS:PropertyExpression
-                DTS:Name="[Get data from sources].[SqlCommand]">"SELECT 'EFL' AS SBU, eb.* " +
-"FROM EXPORT_BOOKING eb " +
+                DTS:Name="[Get data from sources].[SqlCommand]">"SELECT c.CODE AS SBU, eb.* " +
+"FROM EXPORT_BOOKING eb LEFT JOIN COMPANY c on eb.COMPANY_ID = c.ID " +
 "WHERE (eb.UPDATED_DATE &gt; TO_DATE('" + 
     (DT_WSTR, 100) @[User::LAST_FETCH_EXPORT_BOOKING] + 
     "', 'MM/DD/YYYY HH:MI:SS PM') OR eb.CREATED_DATE &gt; TO_DATE('" + 
@@ -243,7 +243,7 @@
                           description="Specifies the SQL statement used by the component to extract data."
                           expressionType="Notify"
                           name="SqlCommand"
-                          UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT 'EFL' AS SBU, eb.* FROM EXPORT_BOOKING eb WHERE (eb.UPDATED_DATE &gt; TO_DATE('11/10/2025 12:46:00 PM', 'MM/DD/YYYY HH:MI:SS PM') OR eb.CREATED_DATE &gt; TO_DATE('11/10/2025 12:46:00 PM', 'MM/DD/YYYY HH:MI:SS PM'))</property>
+                          UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT c.CODE AS SBU, eb.* FROM EXPORT_BOOKING eb LEFT JOIN COMPANY c on eb.COMPANY_ID = c.ID WHERE (eb.UPDATED_DATE &gt; TO_DATE('11/10/2025 12:46:00 PM', 'MM/DD/YYYY HH:MI:SS PM') OR eb.CREATED_DATE &gt; TO_DATE('11/10/2025 12:46:00 PM', 'MM/DD/YYYY HH:MI:SS PM'))</property>
                         <property
                           dataType="System.Int32"
                           description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
@@ -5762,7 +5762,7 @@ where [refTable].[SBU] = ? and [refTable].[BOOKING_ID] = ?</property>
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
                   SQLTask:Connection="{7B0ED744-24EA-4744-ACF9-8BDE371A4DAB}"
-                  SQLTask:SqlStatementSource="-- Assign SSIS variable to local variable&#xA;DECLARE @SBU_NAME VARCHAR(128);&#xA;SET @SBU_NAME = ?;&#xA;&#xA;-- Declare constants for reuse&#xA;DECLARE @SourceTable SYSNAME       = 'ZZ_SOL_EXPORT_BOOKING';&#xA;DECLARE @TargetTable SYSNAME       = 'SOL_EXPORT_BOOKING';&#xA;DECLARE @WatermarkColumn SYSNAME   = 'UPDATED_DATE';&#xA;DECLARE @ProductCode VARCHAR(50)   = 'PRODUCT_CODE';&#xA;&#xA;DECLARE @LastWatermark DATETIME;&#xA;&#xA;-- Get max UPDATED_DATE for the given SBU&#xA;DECLARE @sql NVARCHAR(MAX);&#xA;SET @sql = N'SELECT @LastWatermark_OUT = MAX(' + QUOTENAME(@WatermarkColumn) + N')&#xA;            FROM dbo.' + QUOTENAME(@SourceTable) + N'&#xA;            WHERE SBU = @SBU_NAME;';&#xA;&#xA;EXEC sp_executesql &#xA;    @sql,&#xA;    N'@SBU_NAME VARCHAR(128), @LastWatermark_OUT DATETIME OUTPUT',&#xA;    @SBU_NAME = @SBU_NAME,&#xA;    @LastWatermark_OUT = @LastWatermark OUTPUT;&#xA;&#xA;-- Upsert logic&#xA;IF EXISTS (&#xA;    SELECT 1&#xA;    FROM dbo.ETL_Watermark&#xA;    WHERE SBU = @SBU_NAME&#xA;      AND SourceTable = @SourceTable&#xA;      AND TargetTable = @TargetTable&#xA;)&#xA;BEGIN&#xA;    -- Only update if @LastWatermark is NOT NULL&#xA;    IF @LastWatermark IS NOT NULL&#xA;    BEGIN&#xA;        UPDATE dbo.ETL_Watermark&#xA;        SET LastWatermarkValue = @LastWatermark,&#xA;            CreatedAt = GETDATE()&#xA;        WHERE SBU = @SBU_NAME&#xA;          AND SourceTable = @SourceTable&#xA;          AND TargetTable = @TargetTable;&#xA;    END&#xA;END&#xA;ELSE&#xA;BEGIN&#xA;    -- If LastWatermark is NULL, set it to 1 month ago&#xA;    IF @LastWatermark IS NULL&#xA;        SET @LastWatermark = DATEADD(MONTH, -1, GETDATE());&#xA;&#xA;    INSERT INTO dbo.ETL_Watermark&#xA;    (ProductCode, SBU, SourceTable, WatermarkColumn, LastWatermarkValue, TargetTable, CreatedAt)&#xA;    VALUES&#xA;    (@ProductCode, @SBU_NAME, @SourceTable, @WatermarkColumn, @LastWatermark, @TargetTable, GETDATE());&#xA;END&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+                  SQLTask:SqlStatementSource="-- Assign SSIS variable to local variable&#xA;DECLARE @SBU_NAME VARCHAR(128);&#xA;SET @SBU_NAME = ?;&#xA;&#xA;-- Declare constants for reuse&#xA;DECLARE @SourceTable SYSNAME       = 'ZZ_SOL_EXPORT_BOOKING';&#xA;DECLARE @TargetTable SYSNAME       = 'SOL_EXPORT_BOOKING';&#xA;DECLARE @WatermarkColumn SYSNAME   = 'UPDATED_DATE';&#xA;DECLARE @ProductCode VARCHAR(50)   = 'SOL';&#xA;&#xA;DECLARE @LastWatermark DATETIME;&#xA;&#xA;-- Get max UPDATED_DATE for the given SBU&#xA;DECLARE @sql NVARCHAR(MAX);&#xA;SET @sql = N'SELECT @LastWatermark_OUT = MAX(' + QUOTENAME(@WatermarkColumn) + N')&#xA;            FROM dbo.' + QUOTENAME(@SourceTable) + N'&#xA;            WHERE SBU = @SBU_NAME;';&#xA;&#xA;EXEC sp_executesql &#xA;    @sql,&#xA;    N'@SBU_NAME VARCHAR(128), @LastWatermark_OUT DATETIME OUTPUT',&#xA;    @SBU_NAME = @SBU_NAME,&#xA;    @LastWatermark_OUT = @LastWatermark OUTPUT;&#xA;&#xA;-- Upsert logic&#xA;IF EXISTS (&#xA;    SELECT 1&#xA;    FROM dbo.ETL_Watermark&#xA;    WHERE SBU = @SBU_NAME&#xA;      AND SourceTable = @SourceTable&#xA;      AND TargetTable = @TargetTable&#xA;)&#xA;BEGIN&#xA;    -- Only update if @LastWatermark is NOT NULL&#xA;    IF @LastWatermark IS NOT NULL&#xA;    BEGIN&#xA;        UPDATE dbo.ETL_Watermark&#xA;        SET LastWatermarkValue = @LastWatermark,&#xA;            CreatedAt = GETDATE()&#xA;        WHERE SBU = @SBU_NAME&#xA;          AND SourceTable = @SourceTable&#xA;          AND TargetTable = @TargetTable;&#xA;    END&#xA;END&#xA;ELSE&#xA;BEGIN&#xA;    -- If LastWatermark is NULL, set it to 1 month ago&#xA;    IF @LastWatermark IS NULL&#xA;        SET @LastWatermark = DATEADD(MONTH, -1, GETDATE());&#xA;&#xA;    INSERT INTO dbo.ETL_Watermark&#xA;    (ProductCode, SBU, SourceTable, WatermarkColumn, LastWatermarkValue, TargetTable, CreatedAt)&#xA;    VALUES&#xA;    (@ProductCode, @SBU_NAME, @SourceTable, @WatermarkColumn, @LastWatermark, @TargetTable, GETDATE());&#xA;END&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
                   <SQLTask:ParameterBinding
                     SQLTask:ParameterName="0"
                     SQLTask:DtsVariableName="User::SBU"
@@ -5812,16 +5812,16 @@ where [refTable].[SBU] = ? and [refTable].[BOOKING_ID] = ?</property>
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{CCC28908-AB33-4205-ABAF-637AB9DB4349}"
-          DTS:ObjectName="{CCC28908-AB33-4205-ABAF-637AB9DB4349}"
-          DTS:ValueIndex="0"
-          DTS:VariableName="User::SBU" />
+          DTS:DTSID="{592D6594-5565-402A-A1A0-687580737F9B}"
+          DTS:ObjectName="{592D6594-5565-402A-A1A0-687580737F9B}"
+          DTS:ValueIndex="2"
+          DTS:VariableName="User::ConnectionString" />
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{83CC1D23-EB5F-4D6A-A740-24696D15089E}"
-          DTS:ObjectName="{83CC1D23-EB5F-4D6A-A740-24696D15089E}"
+          DTS:DTSID="{E877B2C9-BBFA-4B52-BD44-9A481E6E053E}"
+          DTS:ObjectName="{E877B2C9-BBFA-4B52-BD44-9A481E6E053E}"
           DTS:ValueIndex="1"
-          DTS:VariableName="User::ConnectionString" />
+          DTS:VariableName="User::SBU" />
       </DTS:ForEachVariableMappings>
     </DTS:Executable>
     <DTS:Executable
@@ -5837,7 +5837,7 @@ where [refTable].[SBU] = ? and [refTable].[BOOKING_ID] = ?</property>
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{7B0ED744-24EA-4744-ACF9-8BDE371A4DAB}"
-          SQLTask:SqlStatementSource="select SBU, DBConnectionString from [dbo].[DatabaseConnections] where ProductCode='SOL' and IsActive=1"
+          SQLTask:SqlStatementSource="select id, SBU, DBConnectionString from [dbo].[DatabaseConnections] where ProductCode='SOL' and IsActive=1"
           SQLTask:ResultType="ResultSetType_Rowset" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
           <SQLTask:ResultBinding
             SQLTask:ResultName="0"
@@ -5864,7 +5864,7 @@ where [refTable].[SBU] = ? and [refTable].[BOOKING_ID] = ?</property>
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Get Las modified date from Destination"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="2">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -5919,7 +5919,7 @@ where [refTable].[SBU] = ? and [refTable].[BOOKING_ID] = ?</property>
                       description="Specifies the SQL statement used by the component to extract data."
                       expressionType="Notify"
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT 'EFL' AS SBU, eb.* FROM EXPORT_BOOKING eb WHERE (eb.UPDATED_DATE &gt; TO_DATE('11/10/2025 12:46:00 PM', 'MM/DD/YYYY HH:MI:SS PM') OR eb.CREATED_DATE &gt; TO_DATE('11/10/2025 12:46:00 PM', 'MM/DD/YYYY HH:MI:SS PM'))</property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT 'ABCDEFGH' AS SBU, eb.* FROM EXPORT_BOOKING eb WHERE (eb.UPDATED_DATE &gt; TO_DATE('11/10/2025 12:46:00 PM', 'MM/DD/YYYY HH:MI:SS PM') OR eb.CREATED_DATE &gt; TO_DATE('11/10/2025 12:46:00 PM', 'MM/DD/YYYY HH:MI:SS PM'))</property>
                     <property
                       dataType="System.Int32"
                       description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
@@ -11401,7 +11401,7 @@ where [refTable].[SBU] = ? and [refTable].[BOOKING_ID] = ?</property>
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Save from Staging table"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="2">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -11417,7 +11417,7 @@ where [refTable].[SBU] = ? and [refTable].[BOOKING_ID] = ?</property>
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Truncate Staging Table"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="2">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -11433,7 +11433,7 @@ where [refTable].[SBU] = ? and [refTable].[BOOKING_ID] = ?</property>
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Update watermark table"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="2">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -11507,125 +11507,6 @@ where [refTable].[SBU] = ? and [refTable].[BOOKING_ID] = ?</property>
     <LayoutInfo>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="264,42.6666666666667"
-          Id="Package\Sequence Container\Get Las modified date from Destination"
-          TopLeft="36.7916591508936,84.4736814384152" />
-        <NodeLayout
-          Size="198.666666666667,42.6666666666667"
-          Id="Package\Sequence Container\Get new or modified data"
-          TopLeft="69.2916576980307,163.842101619597" />
-        <NodeLayout
-          Size="193.333333333334,42.6666666666667"
-          Id="Package\Sequence Container\Save from Staging table"
-          TopLeft="73.0416575303925,245.947363875992" />
-        <NodeLayout
-          Size="190.666666666667,42.6666666666667"
-          Id="Package\Sequence Container\Truncate Staging Table"
-          TopLeft="73.6666575024528,16.0526295580858" />
-        <NodeLayout
-          Size="193.333333333334,42.6666666666667"
-          Id="Package\Sequence Container\Update watermark table"
-          TopLeft="80.5416571951163,330.596486119573" />
-        <EdgeLayout
-          Id="Package\Sequence Container.PrecedenceConstraints[Constraint]"
-          TopLeft="168.89582499334,58.7192962247525">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,25.7543852136627"
-              Start="0,0"
-              End="0,18.2543852136627">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,18.2543852136627" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Sequence Container.PrecedenceConstraints[Constraint 1]"
-          TopLeft="168.708325091129,127.140348105082">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,36.7017535145153"
-              Start="0,0"
-              End="0,29.2017535145153">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,29.2017535145153" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Sequence Container.PrecedenceConstraints[Constraint 2]"
-          TopLeft="169.166657614212,206.508768286264">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,39.4385955897286"
-              Start="0,0"
-              End="0,31.9385955897286">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,31.9385955897286" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Sequence Container.PrecedenceConstraints[Constraint 3]"
-          TopLeft="173.458324029421,288.614030542659">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,41.9824555769136"
-              Start="0,0"
-              End="0,34.4824555769136">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,34.4824555769136" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <ContainerLayout
-          HeaderHeight="43"
-          IsExpanded="True"
-          PanelSize="350.666666666667,430.666666666667"
-          Size="350.666666666667,474"
-          Id="Package\Sequence Container"
-          TopLeft="130.681812339886,124.588515378455" />
-        <NodeLayout
-          Size="180,42.6666666666667"
-          Id="Package\Get All SOL products"
-          TopLeft="215.844146195171,697.863976327942" />
         <NodeLayout
           Size="168,42.6666666666667"
           Id="Package\Foreach Loop Container\Execute SQL Task"
@@ -11742,7 +11623,7 @@ where [refTable].[SBU] = ? and [refTable].[BOOKING_ID] = ?</property>
           HeaderHeight="43"
           IsExpanded="True"
           PanelSize="350.666666666667,430.666666666667"
-          Size="350.666666666667,473.333333333334"
+          Size="350.666666666667,474"
           Id="Package\Foreach Loop Container\Sequence Container 1"
           TopLeft="54.3611062371899,104.775821181265" />
         <ContainerLayout
@@ -11751,33 +11632,265 @@ where [refTable].[SBU] = ? and [refTable].[BOOKING_ID] = ?</property>
           PanelSize="496,633.333333333334"
           Size="496,676"
           Id="Package\Foreach Loop Container"
-          TopLeft="76.0191163708006,870.446492784844" />
+          TopLeft="74.0446846408828,866.86993780019" />
+        <NodeLayout
+          Size="180,42.6666666666667"
+          Id="Package\Get All SOL products"
+          TopLeft="231.469145496679,746.613975792677" />
+        <NodeLayout
+          Size="264,42.6666666666667"
+          Id="Package\Sequence Container\Get Las modified date from Destination"
+          TopLeft="36.7916591508936,84.4736814384152" />
+        <NodeLayout
+          Size="198.666666666667,42.6666666666667"
+          Id="Package\Sequence Container\Get new or modified data"
+          TopLeft="69.2916576980307,163.842101619597" />
+        <NodeLayout
+          Size="193.333333333334,42.6666666666667"
+          Id="Package\Sequence Container\Save from Staging table"
+          TopLeft="73.0416575303925,245.947363875992" />
+        <NodeLayout
+          Size="190.666666666667,42.6666666666667"
+          Id="Package\Sequence Container\Truncate Staging Table"
+          TopLeft="73.6666575024528,16.0526295580858" />
+        <NodeLayout
+          Size="193.333333333334,42.6666666666667"
+          Id="Package\Sequence Container\Update watermark table"
+          TopLeft="80.5416571951163,330.596486119573" />
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="305.844146195171,740.530642994609">
+          Id="Package\Sequence Container.PrecedenceConstraints[Constraint]"
+          TopLeft="168.89582499334,58.7192962247525">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="18.1749701756301,129.915849790235"
+              EndConnector="0,25.7543852136627"
               Start="0,0"
-              End="18.1749701756301,122.415849790235">
+              End="0,18.2543852136627">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,60.9579248951175" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,60.9579248951175"
-                    Point2="0,64.9579248951175"
-                    Point3="4,64.9579248951175" />
+                    End="0,18.2543852136627" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container.PrecedenceConstraints[Constraint 1]"
+          TopLeft="168.708325091129,127.140348105082">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,36.7017535145153"
+              Start="0,0"
+              End="0,29.2017535145153">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
                   <mssgle:LineSegment
-                    End="14.1749701756301,64.9579248951175" />
-                  <mssgle:CubicBezierSegment
-                    Point1="14.1749701756301,64.9579248951175"
-                    Point2="18.1749701756301,64.9579248951175"
-                    Point3="18.1749701756301,68.9579248951175" />
+                    End="0,29.2017535145153" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container.PrecedenceConstraints[Constraint 2]"
+          TopLeft="169.166657614212,206.508768286264">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,39.4385955897286"
+              Start="0,0"
+              End="0,31.9385955897286">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
                   <mssgle:LineSegment
-                    End="18.1749701756301,122.415849790235" />
+                    End="0,31.9385955897286" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container.PrecedenceConstraints[Constraint 3]"
+          TopLeft="173.458324029421,288.614030542659">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,41.9824555769136"
+              Start="0,0"
+              End="0,34.4824555769136">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.4824555769136" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="350.666666666667,430.666666666667"
+          Size="350.666666666667,474"
+          Id="Package\Sequence Container"
+          TopLeft="130.681812339886,124.588515378455" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="321.756915068781,789.280642459343">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,77.5892953408471"
+              Start="0,0"
+              End="0,70.0892953408471">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,70.0892953408471" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <AnnotationLayout
+          Text="&quot;SELECT '&quot; + (DT_WSTR,200) @[User::SBU] + &quot;' AS SBU, eb.* &quot; +&#xA;&quot;FROM EXPORT_BOOKING eb &quot; +&#xA;&quot;WHERE (eb.UPDATED_DATE &gt; TO_DATE('&quot; + &#xA;    (DT_WSTR, 100) @[User::LAST_FETCH_EXPORT_BOOKING] + &#xA;    &quot;', 'MM/DD/YYYY HH:MI:SS PM') OR eb.CREATED_DATE &gt; TO_DATE('&quot; + &#xA;    (DT_WSTR, 100) @[User::LAST_FETCH_EXPORT_BOOKING] + &#xA;    &quot;', 'MM/DD/YYYY HH:MI:SS PM'))&quot;"
+          ParentId="Package"
+          FontInfo="{assembly:Null}"
+          Size="418.666666666667,136"
+          Id="82dbed5d-1e0b-4cb0-9d9b-986e2b7327ea"
+          TopLeft="672.499969936908,1146.73682951432" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Foreach Loop Container\Sequence Container 1\Get new or modified data">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="114.666666666667,42.6666666666667"
+          Id="Package\Foreach Loop Container\Sequence Container 1\Get new or modified data\Lookup"
+          TopLeft="199.895824397294,272.087716310776" />
+        <NodeLayout
+          Size="185.333333333334,42.6666666666667"
+          Id="Package\Foreach Loop Container\Sequence Container 1\Get new or modified data\Get data from sources"
+          TopLeft="160.49999307096,157.394735174331" />
+        <NodeLayout
+          Size="166.666666666667,42.6666666666667"
+          Id="Package\Foreach Loop Container\Sequence Container 1\Get new or modified data\Save to Dest table"
+          TopLeft="82.3958296499527,373.350873093664" />
+        <NodeLayout
+          Size="157.333333333334,42.6666666666667"
+          Id="Package\Foreach Loop Container\Sequence Container 1\Get new or modified data\Save to ZZ table"
+          TopLeft="313.020819340212,371.982452056057" />
+        <EdgeLayout
+          Id="Package\Foreach Loop Container\Sequence Container 1\Get new or modified data.Paths[Lookup No Match Output]"
+          TopLeft="239.451379952849,314.754382977443">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-73.7222169695632,58.5964901162207"
+              Start="0,0"
+              End="-73.7222169695632,51.0964901162207">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.9224202768057" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,19.9224202768057"
+                    Point2="0,23.9224202768057"
+                    Point3="-4,23.9224202768057" />
+                  <mssgle:LineSegment
+                    End="-69.7222169695632,23.9224202768057" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-69.7222169695632,23.9224202768057"
+                    Point2="-73.7222169695632,23.9224202768057"
+                    Point3="-73.7222169695632,27.9224202768057" />
+                  <mssgle:LineSegment
+                    End="-73.7222169695632,51.0964901162207" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-92.6674952035316,28.9224202768057,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Foreach Loop Container\Sequence Container 1\Get new or modified data.Paths[Lookup Match Output]"
+          TopLeft="275.006935508405,314.754382977443">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="116.680550498474,57.2280690786142"
+              Start="0,0"
+              End="116.680550498474,49.7280690786142">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.3637529724618" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,19.3637529724618"
+                    Point2="0,23.3637529724618"
+                    Point3="4,23.3637529724618" />
+                  <mssgle:LineSegment
+                    End="112.680550498474,23.3637529724618" />
+                  <mssgle:CubicBezierSegment
+                    Point1="112.680550498474,23.3637529724618"
+                    Point2="116.680550498474,23.3637529724618"
+                    Point3="116.680550498474,27.3637529724618" />
+                  <mssgle:LineSegment
+                    End="116.680550498474,49.7280690786142" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="10.148888530487,28.3637529724618,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Foreach Loop Container\Sequence Container 1\Get new or modified data.Paths[ADO NET Source Output]"
+          TopLeft="255.197908734127,200.061401840998">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,72.0263144697781"
+              Start="0,0"
+              End="0,64.5263144697781">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,64.5263144697781" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -11788,7 +11901,7 @@ where [refTable].[SBU] = ? and [refTable].[BOOKING_ID] = ?</property>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
-  </Package>
+  </TaskHost>
   <TaskHost
     design-time-name="Package\Sequence Container\Get new or modified data">
     <LayoutInfo>
@@ -11841,7 +11954,9 @@ where [refTable].[SBU] = ? and [refTable].[BOOKING_ID] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -11925,7 +12040,7 @@ where [refTable].[SBU] = ? and [refTable].[BOOKING_ID] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -11935,7 +12050,7 @@ where [refTable].[SBU] = ? and [refTable].[BOOKING_ID] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -11973,144 +12088,6 @@ where [refTable].[SBU] = ? and [refTable].[BOOKING_ID] = ?</property>
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Foreach Loop Container\Sequence Container 1\Get new or modified data">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="114.666666666667,42.6666666666667"
-          Id="Package\Foreach Loop Container\Sequence Container 1\Get new or modified data\Lookup"
-          TopLeft="205.624990807847,185.421050595692" />
-        <NodeLayout
-          Size="185.333333333334,42.6666666666667"
-          Id="Package\Foreach Loop Container\Sequence Container 1\Get new or modified data\Get data from sources"
-          TopLeft="160.49999307096,91.7105253692149" />
-        <NodeLayout
-          Size="166.666666666667,42.6666666666667"
-          Id="Package\Foreach Loop Container\Sequence Container 1\Get new or modified data\Save to Dest table"
-          TopLeft="88.1249960605056,286.68420737858" />
-        <NodeLayout
-          Size="157.333333333334,42.6666666666667"
-          Id="Package\Foreach Loop Container\Sequence Container 1\Get new or modified data\Save to ZZ table"
-          TopLeft="318.749985750765,285.315786340973" />
-        <EdgeLayout
-          Id="Package\Foreach Loop Container\Sequence Container 1\Get new or modified data.Paths[ADO NET Source Output]"
-          TopLeft="253.166659737627,134.377192035882">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="9.79166440355368,51.0438585598104"
-              Start="0,0"
-              End="9.79166440355368,43.5438585598104">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,21.5219292799052" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,21.5219292799052"
-                    Point2="0,25.5219292799052"
-                    Point3="4,25.5219292799052" />
-                  <mssgle:LineSegment
-                    End="5.79166440355368,25.5219292799052" />
-                  <mssgle:CubicBezierSegment
-                    Point1="5.79166440355368,25.5219292799052"
-                    Point2="9.79166440355368,25.5219292799052"
-                    Point3="9.79166440355368,29.5219292799052" />
-                  <mssgle:LineSegment
-                    End="9.79166440355368,43.5438585598104" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Foreach Loop Container\Sequence Container 1\Get new or modified data.Paths[Lookup No Match Output]"
-          TopLeft="245.180546363402,228.087717262359">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-73.7222169695632,58.5964901162207"
-              Start="0,0"
-              End="-73.7222169695632,51.0964901162207">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,19.9224202768057" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,19.9224202768057"
-                    Point2="0,23.9224202768057"
-                    Point3="-4,23.9224202768057" />
-                  <mssgle:LineSegment
-                    End="-69.7222169695632,23.9224202768057" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-69.7222169695632,23.9224202768057"
-                    Point2="-73.7222169695632,23.9224202768057"
-                    Point3="-73.7222169695632,27.9224202768057" />
-                  <mssgle:LineSegment
-                    End="-73.7222169695632,51.0964901162207" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-92.6674952035316,28.9224202768057,111.6127734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Foreach Loop Container\Sequence Container 1\Get new or modified data.Paths[Lookup Match Output]"
-          TopLeft="280.736101918958,228.087717262359">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="116.680550498474,57.2280690786142"
-              Start="0,0"
-              End="116.680550498474,49.7280690786142">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,19.3637529724618" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,19.3637529724618"
-                    Point2="0,23.3637529724618"
-                    Point3="4,23.3637529724618" />
-                  <mssgle:LineSegment
-                    End="112.680550498474,23.3637529724618" />
-                  <mssgle:CubicBezierSegment
-                    Point1="112.680550498474,23.3637529724618"
-                    Point2="116.680550498474,23.3637529724618"
-                    Point3="116.680550498474,27.3637529724618" />
-                  <mssgle:LineSegment
-                    End="116.680550498474,49.7280690786142" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="10.148888530487,28.3637529724618,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Foreach Loop Container\Sequence Container 1\Get new or modified data\Get data from sources">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>

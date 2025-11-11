@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="MasterPkg"
   DTS:PackageType="5"
-  DTS:VersionBuild="23"
-  DTS:VersionGUID="{7E1D8B52-FCF3-4FE8-8C46-4A90506AECF6}">
+  DTS:VersionBuild="27"
+  DTS:VersionGUID="{8341AEF3-C84D-444D-86BB-992FF4A1D59A}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAt8SoWp0jEki4ZDPexRA1YAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACbKtIVgv3YrIHj7zuQ2zR+0Pptm4XLJ77UBT5Yi6hLbQAAAAAOgAAAAAIAACAAAADqhtZJUf0qgi8s4YLXBQQHSzhTAHuArgDkKe1mOlvFByAAAAC0PovsYyqQKD61dPflImuXmgywMsQY8wN0NqzWIGRFE0AAAAAp/0sGlFSb6H48zKqUM8btwROE3ZgDo4jb9srB0pLG3BRAdG/RzO8R+HOh4NyKEEJ+PWmJYjtkLdmeoX9OOZGW</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAt8SoWp0jEki4ZDPexRA1YAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADRswF2DLdtaFvsF/iolGrcryLLkZpjmyhnzXKh8o9IegAAAAAOgAAAAAIAACAAAADooG4djsV4SjdH0j4sgK7UAeJXL2ggIJ4uPLcNkaeX1iAAAABYuHP0/rGJbXbqY+vvzHMv2H9sPzG6sWJjg8UqpbMZlUAAAAA39RWtR6zXiQMgCn8hy+SyYU/8ttJJuDmB50MNM9K+0+AFnNZSZJhsAkTTp5amuSL27gxYupdWPuevsRNTDeQq</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -120,6 +120,24 @@
             </ExecutePackageTask>
           </DTS:ObjectData>
         </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Foreach Loop Container\Execute SQL Task"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{4208FE0B-CC82-4244-99DA-F1B9EF01A80F}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Execute SQL Task"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:PropertyExpression
+            DTS:Name="SqlStatementSource">"insert into test_table values ('"+ @[User::CurrentSBU] +"', '"+ @[User::CurrentConnectionString] +"')"</DTS:PropertyExpression>
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{0E191719-B656-4769-85B2-7228A8A0D6F9}"
+              SQLTask:SqlStatementSource="insert into test_table values ('', '')" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
       </DTS:Executables>
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
@@ -179,48 +197,40 @@
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="180,42.6666666666667"
           Id="Package\Get All SOL products"
-          TopLeft="137.499993853271,103.999998858101" />
+          TopLeft="179.999991953373,99.2105252264775" />
         <NodeLayout
           Size="188,44"
           Id="Package\Foreach Loop Container\Execute Package Task"
-          TopLeft="45.541659206773,32.1578915290062" />
+          TopLeft="49.9166590111953,99.210522371729" />
+        <NodeLayout
+          Size="168,42.6666666666667"
+          Id="Package\Foreach Loop Container\Execute SQL Task"
+          TopLeft="59.2916585921002,28.7368389349897" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="302,126.666666666667"
-          Size="302,169.333333333334"
+          PanelSize="302,198"
+          Size="302,241.333333333334"
           Id="Package\Foreach Loop Container"
           TopLeft="121.249994579703,217.578944979447" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="227.499993853271,146.666665524767">
+          TopLeft="271.124993266538,141.877191893144">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="44.7500007264316,70.9122794546801"
+              EndConnector="0,75.7017530863031"
               Start="0,0"
-              End="44.7500007264316,63.4122794546801">
+              End="0,68.2017530863031">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,31.45613972734" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,31.45613972734"
-                    Point2="0,35.45613972734"
-                    Point3="4,35.45613972734" />
-                  <mssgle:LineSegment
-                    End="40.7500007264316,35.45613972734" />
-                  <mssgle:CubicBezierSegment
-                    Point1="40.7500007264316,35.45613972734"
-                    Point2="44.7500007264316,35.45613972734"
-                    Point3="44.7500007264316,39.45613972734" />
-                  <mssgle:LineSegment
-                    End="44.7500007264316,63.4122794546801" />
+                    End="0,68.2017530863031" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
