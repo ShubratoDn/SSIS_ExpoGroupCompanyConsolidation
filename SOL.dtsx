@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="SOL"
   DTS:PackageType="5"
-  DTS:VersionBuild="117"
-  DTS:VersionGUID="{8EC6FCE0-699B-4E04-B922-C5790B29036E}">
+  DTS:VersionBuild="131"
+  DTS:VersionGUID="{05C0A248-44F2-4FDF-88FC-04155031CAEB}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAt8SoWp0jEki4ZDPexRA1YAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAI4S2JsJK8OobLdMqYowwz9+HpQ3o69EeYZ5vDwMLligAAAAAOgAAAAAIAACAAAACxrKgx4fPtVdyXYF/GagmmtlTkkUhVbZjucdHMG77lGSAAAACRgjUiEUBYKOUuqM2fAHgumK9OihmGFioVvc83x7FjMkAAAADsZX5nnGqJwJCEeeCcSSLOZ6JCEckgIudy9gVktyVehN0kkYostqmhVaXHAkxUk1u4jJ6l43akI1DHDmZld2Rf</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAt8SoWp0jEki4ZDPexRA1YAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAmuXvRGVZTwKAvece9WMRkO1Pp1w1LyUvHLeR0o3GapQAAAAAOgAAAAAIAACAAAADlsM8gCdJ3QYjSdUN9E7jtugPr9OyvRg5Jrr3juvYkYCAAAABs5fbZtUPtiGjLW0QJjZc1hUuM5zFEOPBO+g3zX+qWiEAAAACLfyAFWFBTiPRZTMPhtFH7+OkGYP8U2/nQWm6SUW3Q/V+YIG+VTNCKVqd+XTGieOii0dc4LnjQBaSuh1jTYbC7</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -46,7 +46,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAt8SoWp0jEki4ZDPexRA1YAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAB38PNf6g6TIPB/CkVRqgBnrfyenEqT5nLR0Ms+/j7WtQAAAAAOgAAAAAIAACAAAAD9uBo/N/STBiHFCEvGa6IpACWV9ibFkVca8OQxMedM2CAAAAAuQpGkw5YLOEoYtuTajHV/3F6TcN01K03mE+sguAXFSEAAAADogWWMb1PGXeu5LwTnqNxdPwzP5vG5rw5p0zjFirKwrbZYnZn6qbi9bpbzc41/STdEyHtaz4TY4jByKRLtdKqx</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAt8SoWp0jEki4ZDPexRA1YAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACV0uSgvsi8ezca5b2NuCP42YUuMZ/P5axtzytujm6dLAAAAAAOgAAAAAIAACAAAABIU5SU8iIL3WRRpvL3QbuJK4I+/BgcvcKT1n+jZ3SqgCAAAACRVdG4zu1D7UsmVfLnysS4GSu87R4kFisPKPCVyN8tjEAAAADBc0hdiJKsDjc0qOV2ayUZq0o1Gez+UXshDccSMI7rVFtimnsCXQDR+rY8QqsNPSVFNvSWYfuUqrq9gBjHZtUc</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -61,7 +61,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAt8SoWp0jEki4ZDPexRA1YAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABB6Fy5ImuGBs9pd/axqu9gK5KyZ5muS2+06nheQQPENwAAAAAOgAAAAAIAACAAAAAsLn8fDqT/s6X/sawT0RvRvFEZZ7SoGTQGsEcN/CkpgiAAAACVt/2ASzsvtl5725jnF0i/GdoMCPU8dXPdZMfj1U6Rl0AAAAAoq+nEQC2qJJr49oc8CV0N+mANeuWjNz+i0WcrwX6uhjAXgLah/QgC5XTg1l7w6t/x2FGg+FSQSI83olv/yZe8</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAt8SoWp0jEki4ZDPexRA1YAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAB9ONh9UwYBc/OPnLQBOWaWGM/QItjekJ19nhkooLQSNQAAAAAOgAAAAAIAACAAAADOGA5iCIdjRWLFGd4YUhcwrRsMArorGTwQwvPU5PokKiAAAABPe0IZOlLksP90Xh7+MBIq7lqP8z5EErbmQ4CgktijGkAAAACdp0O7GvoyBs0EfgWfJx7tKYNwsFbRkMZPJJYhtdptCf2xpZRM+TyRKkNd+csfSa2hg9NO1dMXkxsAHmXx5Jct</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -128,7 +128,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="SBU">
       <DTS:VariableValue
-        DTS:DataType="8">ABCDEFGH</DTS:VariableValue>
+        DTS:DataType="8">EFL</DTS:VariableValue>
     </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>
@@ -167,7 +167,7 @@
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
               SQLTask:Connection="{7B0ED744-24EA-4744-ACF9-8BDE371A4DAB}"
-              SQLTask:SqlStatementSource="insert into test_table (SBU, ConnectionString, CreatedDateTime) values ('ABCDEFGH', 'Data Source=192.168.51.227:1521/efl_test;User ID=efl_user;Password=efltest2025', GETDATE()); " xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+              SQLTask:SqlStatementSource="insert into test_table (SBU, ConnectionString, CreatedDateTime) values ('EFL', 'Data Source=192.168.51.227:1521/efl_test;User ID=efl_user;Password=efltest2025', GETDATE()); " xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
         </DTS:Executable>
         <DTS:Executable
@@ -188,7 +188,7 @@
               DTS:ExecutableType="Microsoft.ExecuteSQLTask"
               DTS:LocaleID="-1"
               DTS:ObjectName="Get Las modified date from Destination"
-              DTS:ThreadHint="0">
+              DTS:ThreadHint="2">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -218,8 +218,8 @@
               DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
               <DTS:Variables />
               <DTS:PropertyExpression
-                DTS:Name="[Get data from sources].[SqlCommand]">"SELECT c.CODE AS SBU, eb.* " +
-"FROM EXPORT_BOOKING eb LEFT JOIN COMPANY c on eb.COMPANY_ID = c.ID " +
+                DTS:Name="[Get data from sources].[SqlCommand]">"SELECT '"+ @[User::SBU] +"' AS SBU, eb.* " +
+"FROM EXPORT_BOOKING eb " +
 "WHERE (eb.UPDATED_DATE &gt; TO_DATE('" + 
     (DT_WSTR, 100) @[User::LAST_FETCH_EXPORT_BOOKING] + 
     "', 'MM/DD/YYYY HH:MI:SS PM') OR eb.CREATED_DATE &gt; TO_DATE('" + 
@@ -243,7 +243,7 @@
                           description="Specifies the SQL statement used by the component to extract data."
                           expressionType="Notify"
                           name="SqlCommand"
-                          UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT c.CODE AS SBU, eb.* FROM EXPORT_BOOKING eb LEFT JOIN COMPANY c on eb.COMPANY_ID = c.ID WHERE (eb.UPDATED_DATE &gt; TO_DATE('11/10/2025 12:46:00 PM', 'MM/DD/YYYY HH:MI:SS PM') OR eb.CREATED_DATE &gt; TO_DATE('11/10/2025 12:46:00 PM', 'MM/DD/YYYY HH:MI:SS PM'))</property>
+                          UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT 'EFL' AS SBU, eb.* FROM EXPORT_BOOKING eb WHERE (eb.UPDATED_DATE &gt; TO_DATE('11/10/2025 12:46:00 PM', 'MM/DD/YYYY HH:MI:SS PM') OR eb.CREATED_DATE &gt; TO_DATE('11/10/2025 12:46:00 PM', 'MM/DD/YYYY HH:MI:SS PM'))</property>
                         <property
                           dataType="System.Int32"
                           description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
@@ -286,7 +286,7 @@
                               errorOrTruncationOperation="Conversion"
                               errorRowDisposition="FailComponent"
                               externalMetadataColumnId="Package\Foreach Loop Container\Sequence Container 1\Get new or modified data\Get data from sources.Outputs[ADO NET Source Output].ExternalColumns[SBU]"
-                              length="3"
+                              length="128"
                               lineageId="Package\Foreach Loop Container\Sequence Container 1\Get new or modified data\Get data from sources.Outputs[ADO NET Source Output].Columns[SBU]"
                               name="SBU"
                               truncationRowDisposition="FailComponent" />
@@ -1403,7 +1403,7 @@
                             <externalMetadataColumn
                               refId="Package\Foreach Loop Container\Sequence Container 1\Get new or modified data\Get data from sources.Outputs[ADO NET Source Output].ExternalColumns[SBU]"
                               dataType="wstr"
-                              length="3"
+                              length="128"
                               name="SBU" />
                             <externalMetadataColumn
                               refId="Package\Foreach Loop Container\Sequence Container 1\Get new or modified data\Get data from sources.Outputs[ADO NET Source Output].ExternalColumns[ID]"
@@ -1962,7 +1962,7 @@
                             <outputColumn
                               refId="Package\Foreach Loop Container\Sequence Container 1\Get new or modified data\Get data from sources.Outputs[ADO NET Source Error Output].Columns[SBU]"
                               dataType="wstr"
-                              length="3"
+                              length="128"
                               lineageId="Package\Foreach Loop Container\Sequence Container 1\Get new or modified data\Get data from sources.Outputs[ADO NET Source Error Output].Columns[SBU]"
                               name="SBU" />
                             <outputColumn
@@ -2724,7 +2724,7 @@ where [refTable].[SBU] = ? and [refTable].[BOOKING_ID] = ?</property>
                             <inputColumn
                               refId="Package\Foreach Loop Container\Sequence Container 1\Get new or modified data\Lookup.Inputs[Lookup Input].Columns[SBU]"
                               cachedDataType="wstr"
-                              cachedLength="3"
+                              cachedLength="128"
                               cachedName="SBU"
                               lineageId="Package\Foreach Loop Container\Sequence Container 1\Get new or modified data\Get data from sources.Outputs[ADO NET Source Output].Columns[SBU]">
                               <properties>
@@ -2875,7 +2875,7 @@ where [refTable].[SBU] = ? and [refTable].[BOOKING_ID] = ?</property>
                             <inputColumn
                               refId="Package\Foreach Loop Container\Sequence Container 1\Get new or modified data\Save to Dest table.Inputs[OLE DB Destination Input].Columns[SBU]"
                               cachedDataType="wstr"
-                              cachedLength="3"
+                              cachedLength="128"
                               cachedName="SBU"
                               externalMetadataColumnId="Package\Foreach Loop Container\Sequence Container 1\Get new or modified data\Save to Dest table.Inputs[OLE DB Destination Input].ExternalColumns[SBU]"
                               lineageId="Package\Foreach Loop Container\Sequence Container 1\Get new or modified data\Get data from sources.Outputs[ADO NET Source Output].Columns[SBU]" />
@@ -4323,7 +4323,7 @@ where [refTable].[SBU] = ? and [refTable].[BOOKING_ID] = ?</property>
                             <inputColumn
                               refId="Package\Foreach Loop Container\Sequence Container 1\Get new or modified data\Save to ZZ table.Inputs[OLE DB Destination Input].Columns[SBU]"
                               cachedDataType="wstr"
-                              cachedLength="3"
+                              cachedLength="128"
                               cachedName="SBU"
                               externalMetadataColumnId="Package\Foreach Loop Container\Sequence Container 1\Get new or modified data\Save to ZZ table.Inputs[OLE DB Destination Input].ExternalColumns[SBU]"
                               lineageId="Package\Foreach Loop Container\Sequence Container 1\Get new or modified data\Get data from sources.Outputs[ADO NET Source Output].Columns[SBU]" />
@@ -5725,7 +5725,7 @@ where [refTable].[SBU] = ? and [refTable].[BOOKING_ID] = ?</property>
               DTS:ExecutableType="Microsoft.ExecuteSQLTask"
               DTS:LocaleID="-1"
               DTS:ObjectName="Save from Staging table"
-              DTS:ThreadHint="0">
+              DTS:ThreadHint="2">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -5741,7 +5741,7 @@ where [refTable].[SBU] = ? and [refTable].[BOOKING_ID] = ?</property>
               DTS:ExecutableType="Microsoft.ExecuteSQLTask"
               DTS:LocaleID="-1"
               DTS:ObjectName="Truncate Staging Table"
-              DTS:ThreadHint="0">
+              DTS:ThreadHint="2">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -5757,7 +5757,7 @@ where [refTable].[SBU] = ? and [refTable].[BOOKING_ID] = ?</property>
               DTS:ExecutableType="Microsoft.ExecuteSQLTask"
               DTS:LocaleID="-1"
               DTS:ObjectName="Update watermark table"
-              DTS:ThreadHint="0">
+              DTS:ThreadHint="2">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -5812,14 +5812,14 @@ where [refTable].[SBU] = ? and [refTable].[BOOKING_ID] = ?</property>
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{592D6594-5565-402A-A1A0-687580737F9B}"
-          DTS:ObjectName="{592D6594-5565-402A-A1A0-687580737F9B}"
+          DTS:DTSID="{C725ED4C-A37C-4658-AA30-F87494AD6CBA}"
+          DTS:ObjectName="{C725ED4C-A37C-4658-AA30-F87494AD6CBA}"
           DTS:ValueIndex="2"
           DTS:VariableName="User::ConnectionString" />
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{E877B2C9-BBFA-4B52-BD44-9A481E6E053E}"
-          DTS:ObjectName="{E877B2C9-BBFA-4B52-BD44-9A481E6E053E}"
+          DTS:DTSID="{7D9E2D5D-4FF3-4624-B11A-3C1C14D43EC9}"
+          DTS:ObjectName="{7D9E2D5D-4FF3-4624-B11A-3C1C14D43EC9}"
           DTS:ValueIndex="1"
           DTS:VariableName="User::SBU" />
       </DTS:ForEachVariableMappings>
@@ -5832,7 +5832,7 @@ where [refTable].[SBU] = ? and [refTable].[BOOKING_ID] = ?</property>
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Get All SOL products"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -5864,7 +5864,7 @@ where [refTable].[SBU] = ? and [refTable].[BOOKING_ID] = ?</property>
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Get Las modified date from Destination"
-          DTS:ThreadHint="2">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -5919,7 +5919,7 @@ where [refTable].[SBU] = ? and [refTable].[BOOKING_ID] = ?</property>
                       description="Specifies the SQL statement used by the component to extract data."
                       expressionType="Notify"
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT 'ABCDEFGH' AS SBU, eb.* FROM EXPORT_BOOKING eb WHERE (eb.UPDATED_DATE &gt; TO_DATE('11/10/2025 12:46:00 PM', 'MM/DD/YYYY HH:MI:SS PM') OR eb.CREATED_DATE &gt; TO_DATE('11/10/2025 12:46:00 PM', 'MM/DD/YYYY HH:MI:SS PM'))</property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT 'EFL' AS SBU, eb.* FROM EXPORT_BOOKING eb WHERE (eb.UPDATED_DATE &gt; TO_DATE('11/10/2025 12:46:00 PM', 'MM/DD/YYYY HH:MI:SS PM') OR eb.CREATED_DATE &gt; TO_DATE('11/10/2025 12:46:00 PM', 'MM/DD/YYYY HH:MI:SS PM'))</property>
                     <property
                       dataType="System.Int32"
                       description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
@@ -5962,7 +5962,7 @@ where [refTable].[SBU] = ? and [refTable].[BOOKING_ID] = ?</property>
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Sequence Container\Get new or modified data\Get data from sources.Outputs[ADO NET Source Output].ExternalColumns[SBU]"
-                          length="3"
+                          length="128"
                           lineageId="Package\Sequence Container\Get new or modified data\Get data from sources.Outputs[ADO NET Source Output].Columns[SBU]"
                           name="SBU"
                           truncationRowDisposition="FailComponent" />
@@ -7079,7 +7079,7 @@ where [refTable].[SBU] = ? and [refTable].[BOOKING_ID] = ?</property>
                         <externalMetadataColumn
                           refId="Package\Sequence Container\Get new or modified data\Get data from sources.Outputs[ADO NET Source Output].ExternalColumns[SBU]"
                           dataType="wstr"
-                          length="3"
+                          length="128"
                           name="SBU" />
                         <externalMetadataColumn
                           refId="Package\Sequence Container\Get new or modified data\Get data from sources.Outputs[ADO NET Source Output].ExternalColumns[ID]"
@@ -7638,7 +7638,7 @@ where [refTable].[SBU] = ? and [refTable].[BOOKING_ID] = ?</property>
                         <outputColumn
                           refId="Package\Sequence Container\Get new or modified data\Get data from sources.Outputs[ADO NET Source Error Output].Columns[SBU]"
                           dataType="wstr"
-                          length="3"
+                          length="128"
                           lineageId="Package\Sequence Container\Get new or modified data\Get data from sources.Outputs[ADO NET Source Error Output].Columns[SBU]"
                           name="SBU" />
                         <outputColumn
@@ -8400,7 +8400,7 @@ where [refTable].[SBU] = ? and [refTable].[BOOKING_ID] = ?</property>
                         <inputColumn
                           refId="Package\Sequence Container\Get new or modified data\Lookup.Inputs[Lookup Input].Columns[SBU]"
                           cachedDataType="wstr"
-                          cachedLength="3"
+                          cachedLength="128"
                           cachedName="SBU"
                           lineageId="Package\Sequence Container\Get new or modified data\Get data from sources.Outputs[ADO NET Source Output].Columns[SBU]">
                           <properties>
@@ -8551,7 +8551,7 @@ where [refTable].[SBU] = ? and [refTable].[BOOKING_ID] = ?</property>
                         <inputColumn
                           refId="Package\Sequence Container\Get new or modified data\Save to Dest table.Inputs[OLE DB Destination Input].Columns[SBU]"
                           cachedDataType="wstr"
-                          cachedLength="3"
+                          cachedLength="128"
                           cachedName="SBU"
                           externalMetadataColumnId="Package\Sequence Container\Get new or modified data\Save to Dest table.Inputs[OLE DB Destination Input].ExternalColumns[SBU]"
                           lineageId="Package\Sequence Container\Get new or modified data\Get data from sources.Outputs[ADO NET Source Output].Columns[SBU]" />
@@ -9999,7 +9999,7 @@ where [refTable].[SBU] = ? and [refTable].[BOOKING_ID] = ?</property>
                         <inputColumn
                           refId="Package\Sequence Container\Get new or modified data\Save to ZZ table.Inputs[OLE DB Destination Input].Columns[SBU]"
                           cachedDataType="wstr"
-                          cachedLength="3"
+                          cachedLength="128"
                           cachedName="SBU"
                           externalMetadataColumnId="Package\Sequence Container\Get new or modified data\Save to ZZ table.Inputs[OLE DB Destination Input].ExternalColumns[SBU]"
                           lineageId="Package\Sequence Container\Get new or modified data\Get data from sources.Outputs[ADO NET Source Output].Columns[SBU]" />
@@ -11401,7 +11401,7 @@ where [refTable].[SBU] = ? and [refTable].[BOOKING_ID] = ?</property>
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Save from Staging table"
-          DTS:ThreadHint="2">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -11417,7 +11417,7 @@ where [refTable].[SBU] = ? and [refTable].[BOOKING_ID] = ?</property>
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Truncate Staging Table"
-          DTS:ThreadHint="2">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -11433,7 +11433,7 @@ where [refTable].[SBU] = ? and [refTable].[BOOKING_ID] = ?</property>
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Update watermark table"
-          DTS:ThreadHint="2">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -11518,7 +11518,7 @@ where [refTable].[SBU] = ? and [refTable].[BOOKING_ID] = ?</property>
         <NodeLayout
           Size="198.666666666667,42.6666666666667"
           Id="Package\Foreach Loop Container\Sequence Container 1\Get new or modified data"
-          TopLeft="69.2916576980307,163.842101619597" />
+          TopLeft="68.6666577259704,163.157891100794" />
         <NodeLayout
           Size="193.333333333334,42.6666666666667"
           Id="Package\Foreach Loop Container\Sequence Container 1\Save from Staging table"
@@ -11555,18 +11555,18 @@ where [refTable].[SBU] = ? and [refTable].[BOOKING_ID] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Foreach Loop Container\Sequence Container 1.PrecedenceConstraints[Constraint 1]"
-          TopLeft="168.708325091129,127.140348105082">
+          TopLeft="168.395825105099,127.140348105082">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,36.7017535145151"
+              EndConnector="0,36.0175429957121"
               Start="0,0"
-              End="0,29.2017535145151">
+              End="0,28.5175429957121">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,29.2017535145151" />
+                    End="0,28.5175429957121" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -11577,18 +11577,18 @@ where [refTable].[SBU] = ? and [refTable].[BOOKING_ID] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Foreach Loop Container\Sequence Container 1.PrecedenceConstraints[Constraint 2]"
-          TopLeft="169.166657614212,206.508768286264">
+          TopLeft="168.854157628181,205.824557767461">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,39.4385955897284"
+              EndConnector="0,40.1228061085314"
               Start="0,0"
-              End="0,31.9385955897284">
+              End="0,32.6228061085314">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,31.9385955897284" />
+                    End="0,32.6228061085314" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -11622,17 +11622,17 @@ where [refTable].[SBU] = ? and [refTable].[BOOKING_ID] = ?</property>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="350.666666666667,430.666666666667"
-          Size="350.666666666667,474"
+          PanelSize="350.666666666667,432"
+          Size="350.666666666667,474.666666666667"
           Id="Package\Foreach Loop Container\Sequence Container 1"
-          TopLeft="54.3611062371899,104.775821181265" />
+          TopLeft="54.3611062371899,104.015587271483" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
           PanelSize="496,633.333333333334"
           Size="496,676"
           Id="Package\Foreach Loop Container"
-          TopLeft="74.0446846408828,866.86993780019" />
+          TopLeft="72.9083210553188,864.865684765312" />
         <NodeLayout
           Size="180,42.6666666666667"
           Id="Package\Get All SOL products"
@@ -11754,18 +11754,18 @@ where [refTable].[SBU] = ? and [refTable].[BOOKING_ID] = ?</property>
           TopLeft="130.681812339886,124.588515378455" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="321.756915068781,789.280642459343">
+          TopLeft="321.188733275999,789.280642459344">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,77.5892953408471"
+              EndConnector="0,75.585042305968"
               Start="0,0"
-              End="0,70.0892953408471">
+              End="0,68.085042305968">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,70.0892953408471" />
+                    End="0,68.085042305968" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -11805,6 +11805,28 @@ where [refTable].[SBU] = ? and [refTable].[BOOKING_ID] = ?</property>
           Size="157.333333333334,42.6666666666667"
           Id="Package\Foreach Loop Container\Sequence Container 1\Get new or modified data\Save to ZZ table"
           TopLeft="313.020819340212,371.982452056057" />
+        <EdgeLayout
+          Id="Package\Foreach Loop Container\Sequence Container 1\Get new or modified data.Paths[ADO NET Source Output]"
+          TopLeft="255.197908734127,200.061401840998">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,72.0263144697781"
+              Start="0,0"
+              End="0,64.5263144697781">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,64.5263144697781" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Foreach Loop Container\Sequence Container 1\Get new or modified data.Paths[Lookup No Match Output]"
           TopLeft="239.451379952849,314.754382977443">
@@ -11875,28 +11897,6 @@ where [refTable].[SBU] = ? and [refTable].[BOOKING_ID] = ?</property>
             <mssgm:EdgeLabel
               BoundingBox="10.148888530487,28.3637529724618,96.3827734375,11.609375"
               RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Foreach Loop Container\Sequence Container 1\Get new or modified data.Paths[ADO NET Source Output]"
-          TopLeft="255.197908734127,200.061401840998">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,72.0263144697781"
-              Start="0,0"
-              End="0,64.5263144697781">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,64.5263144697781" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
