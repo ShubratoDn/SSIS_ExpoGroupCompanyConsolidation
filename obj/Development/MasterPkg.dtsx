@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="MasterPkg"
   DTS:PackageType="5"
-  DTS:VersionBuild="28"
-  DTS:VersionGUID="{B45064E8-B38A-4A1C-91B2-C26164AD6485}">
+  DTS:VersionBuild="30"
+  DTS:VersionGUID="{32B0825A-3BDC-4616-854F-96C92687F943}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAt8SoWp0jEki4ZDPexRA1YAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADLZzxNuqh8gyu4QUAwZ1r0aCcBeDVPCBDk3T9Wu275ngAAAAAOgAAAAAIAACAAAABvndsbFgyZfm402K5hTR61Pb7oLV+0n8ZdAOZhBdQd4yAAAABUoNny0kvnfrmTuHZd8dl7DFfsJzEDrVGhqCglxcPoS0AAAABn+QcPKS1r+FgW67TFVtVieXekpb8JQWsydPYhCxr3OBNv21ywaQGy/BNUOHzh9HXcJprH1+RLUsqNY7D51snF</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAt8SoWp0jEki4ZDPexRA1YAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABaEUd/q8urnJgwOmon1dH2zTaereaChlGwipxRYGi9/AAAAAAOgAAAAAIAACAAAABdpSG1vhTpELcB3lLlHKMywSD7R+1gG/cp5gQi+qjsXyAAAAAYO6e7gI7vxwfLsBtSW634u9bf6g2QSAKCtMf8j/BYc0AAAACKq1cNIjVisaN70uFeoEcXRUV5J9d6iF9Srec/f9xkSQ5Wb49UGpqlCilv067JGV5eNkskGOv9ExRBLGFbZ76+</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -120,24 +120,6 @@
             </ExecutePackageTask>
           </DTS:ObjectData>
         </DTS:Executable>
-        <DTS:Executable
-          DTS:refId="Package\Foreach Loop Container\Execute SQL Task"
-          DTS:CreationName="Microsoft.ExecuteSQLTask"
-          DTS:Description="Execute SQL Task"
-          DTS:DTSID="{4208FE0B-CC82-4244-99DA-F1B9EF01A80F}"
-          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
-          DTS:LocaleID="-1"
-          DTS:ObjectName="Execute SQL Task"
-          DTS:ThreadHint="0">
-          <DTS:Variables />
-          <DTS:PropertyExpression
-            DTS:Name="SqlStatementSource">"insert into test_table values ('"+ @[User::CurrentSBU] +"', '"+ @[User::CurrentConnectionString] +"')"</DTS:PropertyExpression>
-          <DTS:ObjectData>
-            <SQLTask:SqlTaskData
-              SQLTask:Connection="{0E191719-B656-4769-85B2-7228A8A0D6F9}"
-              SQLTask:SqlStatementSource="insert into test_table values ('', '')" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
-          </DTS:ObjectData>
-        </DTS:Executable>
       </DTS:Executables>
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
@@ -197,20 +179,16 @@
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="188,44"
           Id="Package\Foreach Loop Container\Execute Package Task"
-          TopLeft="49.9166590111953,99.210522371729" />
-        <NodeLayout
-          Size="168,42.6666666666667"
-          Id="Package\Foreach Loop Container\Execute SQL Task"
-          TopLeft="59.2916585921002,28.7368389349897" />
+          TopLeft="48.0416590950143,51.9999965743017" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
           PanelSize="302,198.666666666667"
-          Size="302,241.333333333334"
+          Size="302,242"
           Id="Package\Foreach Loop Container"
           TopLeft="121.249994579703,217.578944979447" />
         <NodeLayout
@@ -223,14 +201,14 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,75.7017530863031"
+              EndConnector="0,75.7017530863028"
               Start="0,0"
-              End="0,68.2017530863031">
+              End="0,68.2017530863028">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,68.2017530863031" />
+                    End="0,68.2017530863028" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
