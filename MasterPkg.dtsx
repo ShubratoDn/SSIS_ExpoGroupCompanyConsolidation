@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="MasterPkg"
   DTS:PackageType="5"
-  DTS:VersionBuild="27"
-  DTS:VersionGUID="{8341AEF3-C84D-444D-86BB-992FF4A1D59A}">
+  DTS:VersionBuild="28"
+  DTS:VersionGUID="{B45064E8-B38A-4A1C-91B2-C26164AD6485}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAt8SoWp0jEki4ZDPexRA1YAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABrSMmWf0Br/jjCBcuWLStYKUydNy0gAQTXtIJvYkEvGgAAAAAOgAAAAAIAACAAAABEI0mT3JJw+LlrRqMxoEWwVeyanZumo49PFk1UzFYXbyAAAABNdck/tblH12wGNE6qx9oh1SFLtbSWs6f/HsnddC2fgEAAAABUN8eH8iQjR+nOibS5q/DX/CZpsHqoI3pRoggGbkXVfAj4hl1saImWe6fCssJ3M0pEBus3oUVz+iy9y9Fi4fZX</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAt8SoWp0jEki4ZDPexRA1YAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADZHXOex08LkRnWLD2hwGSmVLM4+3YE40RgY9T3PfahGgAAAAAOgAAAAAIAACAAAACFZTpcjUQgoXdITex+l5YjaSt+Q7jlU5oeFfbKdq7oWyAAAAAezqDMDGkYuKX/Y/mTFefeiPqMC3dfdUcrICQMPK7e9EAAAAByUePTBGwhrv8rKLaazvuOAexetsj30XK3X60laRcE/yW2NhSZu+Z6sJWMVRXIYm8ys2aczS80aiv+HHi43mrh</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -199,10 +199,6 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="180,42.6666666666667"
-          Id="Package\Get All SOL products"
-          TopLeft="179.999991953373,99.2105252264775" />
-        <NodeLayout
           Size="188,44"
           Id="Package\Foreach Loop Container\Execute Package Task"
           TopLeft="49.9166590111953,99.210522371729" />
@@ -213,10 +209,14 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="302,198"
+          PanelSize="302,198.666666666667"
           Size="302,241.333333333334"
           Id="Package\Foreach Loop Container"
           TopLeft="121.249994579703,217.578944979447" />
+        <NodeLayout
+          Size="180,42.6666666666667"
+          Id="Package\Get All SOL products"
+          TopLeft="179.999991953373,99.2105252264775" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="271.124993266538,141.877191893144">
