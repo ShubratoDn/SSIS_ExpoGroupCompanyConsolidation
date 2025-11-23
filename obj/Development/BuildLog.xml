@@ -2,18 +2,18 @@
 <BuildLog xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ProjectInfo>
     <Name>ExpoGroupCompanyConsolidation</Name>
-    <LastWriteTime>2025-11-23T05:20:25.8746767Z</LastWriteTime>
+    <LastWriteTime>2025-11-23T06:07:32.6758321Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>MasterPkg.dtsx</Name>
-      <LastWriteTime>2025-11-23T05:26:17.8034981Z</LastWriteTime>
+      <LastWriteTime>2025-11-23T06:25:34.2714099Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>SOL_Transactional_Data.dtsx</Name>
-      <LastWriteTime>2025-11-23T05:21:10.7265683Z</LastWriteTime>
+      <LastWriteTime>2025-11-23T06:24:58.453295Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>

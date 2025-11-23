@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="MasterPkg"
   DTS:PackageType="5"
-  DTS:VersionBuild="56"
-  DTS:VersionGUID="{030F8D4D-61B0-46C2-9664-77C66C641E64}">
+  DTS:VersionBuild="68"
+  DTS:VersionGUID="{9784580E-C071-4F4A-B066-DE4DD2679E24}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,22 +29,11 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAt8SoWp0jEki4ZDPexRA1YAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACem14kiDU3uLhNPVC17Km/tLYczxLrDQNOx7bNAq0T5gAAAAAOgAAAAAIAACAAAAA0AbeV3yc/JPLoIpt/eeALRtX1YszYNsltfn8CAp8NuyAAAAD+yTwYQhg8khl3A/sDfwP/1Q+kuWCRMyrhvXcTTXM6d0AAAADGI8MjrnfAYoJaoAXSZQHEnX/1nYFa39Dyp4mNeasV9Tw3FBLQH6e6xwDg47wwSdEp9mPoSsbfDfrXFDE5hPiU</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAt8SoWp0jEki4ZDPexRA1YAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAcIn8d6E3zeJ4dMXFVVEpnlwmAOkFgA9pas8TBtDqFuwAAAAAOgAAAAAIAACAAAACh4Un6DfTp58m6+ZjWgWcu1YLcWuGfZqerxaBntHcm/iAAAABplRQjn+racQCi269J4u9d7L8R98psb9WVvyJq/TzOZkAAAABt9ecpJoJ1gRh/JZ3ikTjyNBRDUDIZz+R5a4beBB5iuh9yPX86zxOULUYhAe49FuEBarHrewiTmubBXLeIUA2x</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
-  <DTS:PackageParameters>
-    <DTS:PackageParameter
-      DTS:CreationName=""
-      DTS:DataType="8"
-      DTS:DTSID="{ACA5410F-D84D-41DC-8831-03854368CB67}"
-      DTS:ObjectName="parentParam">
-      <DTS:Property
-        DTS:DataType="8"
-        DTS:Name="ParameterValue">Parent</DTS:Property>
-    </DTS:PackageParameter>
-  </DTS:PackageParameters>
   <DTS:Variables>
     <DTS:Variable
       DTS:CreationName=""
@@ -84,43 +73,12 @@
         </SOAP-ENV:Envelope>
       </DTS:VariableValue>
     </DTS:Variable>
-    <DTS:Variable
-      DTS:CreationName=""
-      DTS:DTSID="{306849E5-501C-4C3B-85FE-1E5E58316EB2}"
-      DTS:IncludeInDebugDump="2345"
-      DTS:Namespace="User"
-      DTS:ObjectName="PassVar">
-      <DTS:VariableValue
-        DTS:DataType="8">EXE</DTS:VariableValue>
-    </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>
-    <DTS:Executable
-      DTS:refId="Package\Execute Package Task"
-      DTS:CreationName="Microsoft.ExecutePackageTask"
-      DTS:Description="Execute Package Task"
-      DTS:DTSID="{65EED3D5-CEA0-48E9-AC59-BF431A7C9F50}"
-      DTS:ExecutableType="Microsoft.ExecutePackageTask"
-      DTS:LocaleID="-1"
-      DTS:ObjectName="Execute Package Task"
-      DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
-      <DTS:Variables />
-      <DTS:ObjectData>
-        <ExecutePackageTask>
-          <UseProjectReference>True</UseProjectReference>
-          <PackageName>SOL_Transactional_Data.dtsx</PackageName>
-          <ParameterAssignment>
-            <ParameterName>childParam</ParameterName>
-            <BindedVariableOrParameterName>$Package::parentParam</BindedVariableOrParameterName>
-          </ParameterAssignment>
-        </ExecutePackageTask>
-      </DTS:ObjectData>
-    </DTS:Executable>
     <DTS:Executable
       DTS:refId="Package\Foreach Loop Container"
       DTS:CreationName="STOCK:FOREACHLOOP"
       DTS:Description="Foreach Loop Container"
-      DTS:Disabled="True"
       DTS:DTSID="{B304F219-2EE2-48DB-A663-D4F65C3E6C2E}"
       DTS:ExecutableType="STOCK:FOREACHLOOP"
       DTS:LocaleID="-1"
@@ -231,7 +189,6 @@
       DTS:refId="Package\Get All SOL products"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:Disabled="True"
       DTS:DTSID="{67C25B55-D00A-42C6-B764-CD1620B5E436}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
@@ -282,11 +239,11 @@
           PanelSize="266,115"
           Size="266,158"
           Id="Package\Foreach Loop Container\FETCH TRANSACTIONAL DATA"
-          TopLeft="330,41" />
+          TopLeft="330,40" />
         <NodeLayout
           Size="206,42"
           Id="Package\Foreach Loop Container\FETCH MASTER DATA\Execute SOL Master Data"
-          TopLeft="15,20.5" />
+          TopLeft="15,19.5" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
@@ -300,25 +257,25 @@
           PanelSize="684,269"
           Size="684,312"
           Id="Package\Foreach Loop Container"
-          TopLeft="124.326917656626,192.425098825601" />
+          TopLeft="123.326917656626,191.425098825601" />
         <NodeLayout
           Size="180,43"
           Id="Package\Get All SOL products"
           TopLeft="373.999991953373,78.2105252264775" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="465.163454805,121.210525226478">
+          TopLeft="464.663454805,121.210525226478">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,71.2145735991235"
+              EndConnector="0,70.2145735991235"
               Start="0,0"
-              End="0,63.7145735991235">
+              End="0,62.7145735991235">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,63.7145735991235" />
+                    End="0,62.7145735991235" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -327,10 +284,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="191,42"
-          Id="Package\Execute Package Task"
-          TopLeft="244,576" />
       </GraphLayout>
     </LayoutInfo>
   </Package>

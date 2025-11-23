@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="MasterPkg"
   DTS:PackageType="5"
-  DTS:VersionBuild="64"
-  DTS:VersionGUID="{B4BAB25E-5E65-402E-B985-D90A06C82B6E}">
+  DTS:VersionBuild="68"
+  DTS:VersionGUID="{9784580E-C071-4F4A-B066-DE4DD2679E24}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAt8SoWp0jEki4ZDPexRA1YAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAuisOENY3aXWlWi/kAWtIqFA1I0Ho0Kz0JEaGYIBlpxwAAAAAOgAAAAAIAACAAAACH+0rLR/FWymc5+luo7Asd4hlLFy57M6EETSAmFndIVyAAAADY9p5jAwon2C7H2po6r6O9HZbvfe8YbLh2ykxUS0n+jkAAAAAaPbfMnPIOP1Q0w6Dcxu+jBpisnV0xRObVoevChJniKNCHGvGx7lhMZNE367WR16+TOJXV8woQz4ctyEILqkmR</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAt8SoWp0jEki4ZDPexRA1YAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACrGY8bexL8VGkPIJFSMQ1HcI/NFpltovFqtILKOvAMPQAAAAAOgAAAAAIAACAAAABCoyppq7QzoUIrNi9+vWcmkjJm01yGWYCTaFIM73dFHyAAAAAfV2dJ3CTJ6YDNJzVSfGxnSap4cWyD57UdWh0zHnQvJEAAAAAxaBWZdHJfsMxGIKfHZZc0yEjwOIVe/eKmoO3IQEDj3AtTKS5yYdEfCGeVXyTSZDkQFYPDamtsqRv9PufSehwR</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -157,11 +157,11 @@
                   <UseProjectReference>True</UseProjectReference>
                   <PackageName>SOL_Transactional_Data.dtsx</PackageName>
                   <ParameterAssignment>
-                    <ParameterName>SBUparam</ParameterName>
+                    <ParameterName>SBU</ParameterName>
                     <BindedVariableOrParameterName>User::CurrentSBU</BindedVariableOrParameterName>
                   </ParameterAssignment>
                   <ParameterAssignment>
-                    <ParameterName>ConnectionStringParam</ParameterName>
+                    <ParameterName>ConnectionString</ParameterName>
                     <BindedVariableOrParameterName>User::CurrentConnectionString</BindedVariableOrParameterName>
                   </ParameterAssignment>
                 </ExecutePackageTask>
