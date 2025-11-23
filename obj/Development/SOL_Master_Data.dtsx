@@ -1,0 +1,1747 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="11/20/2025 1:54:37 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="IWLDHKLTSHUBRO"
+  DTS:CreatorName="EGAD\shubrato.iwl"
+  DTS:DTSID="{92E86942-B09E-4228-AD28-12D3FADD145E}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="17.0.1008.3"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="41"
+  DTS:VersionGUID="{D103A612-0BE3-463F-BF75-23E45274534D}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Destination DB]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{4868BCFF-8955-4EED-A6CE-762F2D572382}"
+      DTS:ObjectName="Destination DB">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=192.168.51.144\ExpoDB;User ID=sa;Initial Catalog=SSIS_COMPANY_CONSOLIDATION;Provider=SQLOLEDB.1;Application Name=SSIS-Package1-{4868BCFF-8955-4EED-A6CE-762F2D572382}192.168.51.144\ExpoDB.SSIS_COMPANY_CONSOLIDATION.sa;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAt8SoWp0jEki4ZDPexRA1YAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACq51+ZAsyTnum3D/JyWkTdKkWFd5JAyl6YTTx7toDNMwAAAAAOgAAAAAIAACAAAABxeql+PJTLDGeky8RP72uqcKe3QuXEbzFwyF+za3GBpyAAAABqLjMvd2bASLPcIEuDKVmva+yrNYZ4Lo/NmbXnyKd8LkAAAAChU15mM3BXFJ0CPd6Yx2MMSbOjVNjgiipT9C4Db1aVzC66B2ApiyfeHae1yhYZj/VGQgfzYJgRHEh8SAVV5KzD</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Dynamic DB.test]"
+      DTS:CreationName="ADO.NET:System.Data.OracleClient.OracleConnection, System.Data.OracleClient, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{075B3FD5-9199-4454-9E4B-2E68CB9E3FF3}"
+      DTS:ObjectName="Dynamic DB.test">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::ConnectionString]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=192.168.51.227:1521/efl_test;User ID=efl_user;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAt8SoWp0jEki4ZDPexRA1YAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACMtd8ut2TyTzi0SREKjGPNl3hNrWEbhXkrPxXQ2QQmwQAAAAAOgAAAAAIAACAAAADTthHA2Z5JjbR91RsWBvPD6w6IOKXrVK+x8NqBFCkxKyAAAABdFJFU/CQWYei3AylDfBaHtcW1AyR65JjNwy3er1XGO0AAAABPZUfXQG1M5c/4foXl/MxlGFrffrhDs0LimS5kzTpwgBVoMftrzbQeAoIDefESk3+V4aZ32acJM0i9kEkGj4kU</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{A8CFEA0D-35EC-4255-AAAE-77896C05BFBD}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="ConnectionString">
+      <DTS:VariableValue
+        DTS:DataType="8">Data Source=192.168.51.227:1521/efl_test;User ID=efl_user;Password=efltest2025</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{565F5775-D1BE-402C-9FA5-FC4AA55B827F}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="PRODUCT_CODE">
+      <DTS:VariableValue
+        DTS:DataType="8">SOL</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{E45FC9D9-8105-4EF9-99A8-D632E22D087C}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="SBU">
+      <DTS:VariableValue
+        DTS:DataType="8">EFL</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Shipper Table"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:Description="Sequence Container"
+      DTS:DTSID="{0E838E62-7AF3-4B84-8558-4EC481D3E52A}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Shipper Table">
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Shipper Table\Fetch Data"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{a98092ef-6563-486b-9130-7fa8b06a31d0}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Fetch Data"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:PropertyExpression
+            DTS:Name="[Fetch Source Data].[SqlCommand]">"select '"+ @[User::SBU] +"' as SBU , s.*  from shipper s"</DTS:PropertyExpression>
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Shipper Table\Fetch Data\Fetch Source Data"
+                  componentClassID="Microsoft.ManagedComponentHost"
+                  contactInfo="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server."
+                  name="Fetch Source Data"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the SQL statement used by the component to extract data."
+                      expressionType="Notify"
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select 'EFL' as SBU , s.*  from shipper s</property>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">30</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether to allow non-string external columns to be implicitly converted to strings at the output columns."
+                      name="AllowImplicitStringConversion">true</property>
+                    <property
+                      dataType="System.String"
+                      description="The Source database table name."
+                      expressionType="Notify"
+                      name="TableOrViewName"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specify the mode to retrieve external column information"
+                      name="AccessMode"
+                      typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter">2</property>
+                    <property
+                      dataType="System.String"
+                      name="UserComponentTypeName">Microsoft.DataReaderSourceAdapter</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Connections[IDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[Dynamic DB.test]"
+                      connectionManagerRefId="Package.ConnectionManagers[Dynamic DB.test]"
+                      description="Managed connection manager"
+                      name="IDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output]"
+                      name="ADO NET Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[SBU]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[SBU]"
+                          length="3"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[SBU]"
+                          name="SBU"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[ID]"
+                          dataType="numeric"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[ID]"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[ID]"
+                          name="ID"
+                          precision="19"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[CREATED_BY]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[CREATED_BY]"
+                          length="512"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[CREATED_BY]"
+                          name="CREATED_BY"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[CREATED_DATE]"
+                          dataType="dbTimeStamp"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[CREATED_DATE]"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[CREATED_DATE]"
+                          name="CREATED_DATE"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[UPDATED_BY]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[UPDATED_BY]"
+                          length="512"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[UPDATED_BY]"
+                          name="UPDATED_BY"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[UPDATED_DATE]"
+                          dataType="dbTimeStamp"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[UPDATED_DATE]"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[UPDATED_DATE]"
+                          name="UPDATED_DATE"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[VERSION]"
+                          dataType="numeric"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[VERSION]"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[VERSION]"
+                          name="VERSION"
+                          precision="10"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[ACTIVE]"
+                          dataType="numeric"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[ACTIVE]"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[ACTIVE]"
+                          name="ACTIVE"
+                          precision="1"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[CODE]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[CODE]"
+                          length="512"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[CODE]"
+                          name="CODE"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[CONTACT_PERSON_EMAIL]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[CONTACT_PERSON_EMAIL]"
+                          length="512"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[CONTACT_PERSON_EMAIL]"
+                          name="CONTACT_PERSON_EMAIL"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[CONTACT_PERSON_MOBILE]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[CONTACT_PERSON_MOBILE]"
+                          length="512"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[CONTACT_PERSON_MOBILE]"
+                          name="CONTACT_PERSON_MOBILE"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[CONTACT_PERSON_NAME]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[CONTACT_PERSON_NAME]"
+                          length="512"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[CONTACT_PERSON_NAME]"
+                          name="CONTACT_PERSON_NAME"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[CONTACT_PERSON_PHONE]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[CONTACT_PERSON_PHONE]"
+                          length="512"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[CONTACT_PERSON_PHONE]"
+                          name="CONTACT_PERSON_PHONE"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[EMAIL]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[EMAIL]"
+                          length="512"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[EMAIL]"
+                          name="EMAIL"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[MOBILE]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[MOBILE]"
+                          length="512"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[MOBILE]"
+                          name="MOBILE"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[NAME]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[NAME]"
+                          length="512"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[NAME]"
+                          name="NAME"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[PHONE]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[PHONE]"
+                          length="512"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[PHONE]"
+                          name="PHONE"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[CITY_ID]"
+                          dataType="numeric"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[CITY_ID]"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[CITY_ID]"
+                          name="CITY_ID"
+                          precision="19"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[COMPANY_ID]"
+                          dataType="numeric"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[COMPANY_ID]"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[COMPANY_ID]"
+                          name="COMPANY_ID"
+                          precision="19"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[COUNTRY_ID]"
+                          dataType="numeric"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[COUNTRY_ID]"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[COUNTRY_ID]"
+                          name="COUNTRY_ID"
+                          precision="19"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[STATE_ID]"
+                          dataType="numeric"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[STATE_ID]"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[STATE_ID]"
+                          name="STATE_ID"
+                          precision="19"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[PARTNER_CODE]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[PARTNER_CODE]"
+                          length="512"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[PARTNER_CODE]"
+                          name="PARTNER_CODE"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[AP_CODE]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[AP_CODE]"
+                          length="512"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[AP_CODE]"
+                          name="AP_CODE"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[GROUP_NAME]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[GROUP_NAME]"
+                          length="512"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[GROUP_NAME]"
+                          name="GROUP_NAME"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[INT_CODE1]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[INT_CODE1]"
+                          length="512"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[INT_CODE1]"
+                          name="INT_CODE1"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[INT_CODE2]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[INT_CODE2]"
+                          length="512"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[INT_CODE2]"
+                          name="INT_CODE2"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[INT_NOTE]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[INT_NOTE]"
+                          length="512"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[INT_NOTE]"
+                          name="INT_NOTE"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[SAP_CODE]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[SAP_CODE]"
+                          length="512"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[SAP_CODE]"
+                          name="SAP_CODE"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[INT_CODE3]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[INT_CODE3]"
+                          length="512"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[INT_CODE3]"
+                          name="INT_CODE3"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[REGISTRATION_NO]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[REGISTRATION_NO]"
+                          length="512"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[REGISTRATION_NO]"
+                          name="REGISTRATION_NO"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[CREDIT_EXPIRED_DATE]"
+                          dataType="dbTimeStamp"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[CREDIT_EXPIRED_DATE]"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[CREDIT_EXPIRED_DATE]"
+                          name="CREDIT_EXPIRED_DATE"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[CREDIT_UPDATED_BY]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[CREDIT_UPDATED_BY]"
+                          length="1020"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[CREDIT_UPDATED_BY]"
+                          name="CREDIT_UPDATED_BY"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[CREDIT_UPDATED_DATE]"
+                          dataType="dbTimeStamp"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[CREDIT_UPDATED_DATE]"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[CREDIT_UPDATED_DATE]"
+                          name="CREDIT_UPDATED_DATE"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[CREDIT]"
+                          dataType="numeric"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[CREDIT]"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[CREDIT]"
+                          name="CREDIT"
+                          precision="38"
+                          scale="4"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[CREDIT_AMOUNT]"
+                          dataType="numeric"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[CREDIT_AMOUNT]"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[CREDIT_AMOUNT]"
+                          name="CREDIT_AMOUNT"
+                          precision="38"
+                          scale="4"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[SOL_CODE]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[SOL_CODE]"
+                          length="1020"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[SOL_CODE]"
+                          name="SOL_CODE"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[EORI_NO]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[EORI_NO]"
+                          length="512"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[EORI_NO]"
+                          name="EORI_NO"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[SHORT_NAME]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[SHORT_NAME]"
+                          length="1020"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[SHORT_NAME]"
+                          name="SHORT_NAME"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[IS_SHIPPER]"
+                          dataType="numeric"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[IS_SHIPPER]"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[IS_SHIPPER]"
+                          name="IS_SHIPPER"
+                          precision="1"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[IS_SUPPLIER]"
+                          dataType="numeric"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[IS_SUPPLIER]"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[IS_SUPPLIER]"
+                          name="IS_SUPPLIER"
+                          precision="1"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[SBU]"
+                          dataType="wstr"
+                          length="3"
+                          name="SBU" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[ID]"
+                          dataType="numeric"
+                          name="ID"
+                          precision="19" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[CREATED_BY]"
+                          dataType="wstr"
+                          length="512"
+                          name="CREATED_BY" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[CREATED_DATE]"
+                          dataType="dbTimeStamp"
+                          name="CREATED_DATE" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[UPDATED_BY]"
+                          dataType="wstr"
+                          length="512"
+                          name="UPDATED_BY" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[UPDATED_DATE]"
+                          dataType="dbTimeStamp"
+                          name="UPDATED_DATE" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[VERSION]"
+                          dataType="numeric"
+                          name="VERSION"
+                          precision="10" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[ACTIVE]"
+                          dataType="numeric"
+                          name="ACTIVE"
+                          precision="1" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[CODE]"
+                          dataType="wstr"
+                          length="512"
+                          name="CODE" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[CONTACT_PERSON_EMAIL]"
+                          dataType="wstr"
+                          length="512"
+                          name="CONTACT_PERSON_EMAIL" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[CONTACT_PERSON_MOBILE]"
+                          dataType="wstr"
+                          length="512"
+                          name="CONTACT_PERSON_MOBILE" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[CONTACT_PERSON_NAME]"
+                          dataType="wstr"
+                          length="512"
+                          name="CONTACT_PERSON_NAME" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[CONTACT_PERSON_PHONE]"
+                          dataType="wstr"
+                          length="512"
+                          name="CONTACT_PERSON_PHONE" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[EMAIL]"
+                          dataType="wstr"
+                          length="512"
+                          name="EMAIL" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[MOBILE]"
+                          dataType="wstr"
+                          length="512"
+                          name="MOBILE" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[NAME]"
+                          dataType="wstr"
+                          length="512"
+                          name="NAME" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[PHONE]"
+                          dataType="wstr"
+                          length="512"
+                          name="PHONE" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[CITY_ID]"
+                          dataType="numeric"
+                          name="CITY_ID"
+                          precision="19" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[COMPANY_ID]"
+                          dataType="numeric"
+                          name="COMPANY_ID"
+                          precision="19" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[COUNTRY_ID]"
+                          dataType="numeric"
+                          name="COUNTRY_ID"
+                          precision="19" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[STATE_ID]"
+                          dataType="numeric"
+                          name="STATE_ID"
+                          precision="19" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[PARTNER_CODE]"
+                          dataType="wstr"
+                          length="512"
+                          name="PARTNER_CODE" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[AP_CODE]"
+                          dataType="wstr"
+                          length="512"
+                          name="AP_CODE" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[GROUP_NAME]"
+                          dataType="wstr"
+                          length="512"
+                          name="GROUP_NAME" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[INT_CODE1]"
+                          dataType="wstr"
+                          length="512"
+                          name="INT_CODE1" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[INT_CODE2]"
+                          dataType="wstr"
+                          length="512"
+                          name="INT_CODE2" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[INT_NOTE]"
+                          dataType="wstr"
+                          length="512"
+                          name="INT_NOTE" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[SAP_CODE]"
+                          dataType="wstr"
+                          length="512"
+                          name="SAP_CODE" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[INT_CODE3]"
+                          dataType="wstr"
+                          length="512"
+                          name="INT_CODE3" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[REGISTRATION_NO]"
+                          dataType="wstr"
+                          length="512"
+                          name="REGISTRATION_NO" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[CREDIT_EXPIRED_DATE]"
+                          dataType="dbTimeStamp"
+                          name="CREDIT_EXPIRED_DATE" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[CREDIT_UPDATED_BY]"
+                          dataType="wstr"
+                          length="1020"
+                          name="CREDIT_UPDATED_BY" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[CREDIT_UPDATED_DATE]"
+                          dataType="dbTimeStamp"
+                          name="CREDIT_UPDATED_DATE" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[CREDIT]"
+                          dataType="numeric"
+                          name="CREDIT"
+                          precision="38"
+                          scale="4" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[CREDIT_AMOUNT]"
+                          dataType="numeric"
+                          name="CREDIT_AMOUNT"
+                          precision="38"
+                          scale="4" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[SOL_CODE]"
+                          dataType="wstr"
+                          length="1020"
+                          name="SOL_CODE" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[EORI_NO]"
+                          dataType="wstr"
+                          length="512"
+                          name="EORI_NO" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[SHORT_NAME]"
+                          dataType="wstr"
+                          length="1020"
+                          name="SHORT_NAME" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[IS_SHIPPER]"
+                          dataType="numeric"
+                          name="IS_SHIPPER"
+                          precision="1" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].ExternalColumns[IS_SUPPLIER]"
+                          dataType="numeric"
+                          name="IS_SUPPLIER"
+                          precision="1" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output]"
+                      isErrorOut="true"
+                      name="ADO NET Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[SBU]"
+                          dataType="wstr"
+                          length="3"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[SBU]"
+                          name="SBU" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[ID]"
+                          dataType="numeric"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[ID]"
+                          name="ID"
+                          precision="19" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[CREATED_BY]"
+                          dataType="wstr"
+                          length="512"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[CREATED_BY]"
+                          name="CREATED_BY" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[CREATED_DATE]"
+                          dataType="dbTimeStamp"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[CREATED_DATE]"
+                          name="CREATED_DATE" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[UPDATED_BY]"
+                          dataType="wstr"
+                          length="512"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[UPDATED_BY]"
+                          name="UPDATED_BY" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[UPDATED_DATE]"
+                          dataType="dbTimeStamp"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[UPDATED_DATE]"
+                          name="UPDATED_DATE" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[VERSION]"
+                          dataType="numeric"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[VERSION]"
+                          name="VERSION"
+                          precision="10" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[ACTIVE]"
+                          dataType="numeric"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[ACTIVE]"
+                          name="ACTIVE"
+                          precision="1" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[CODE]"
+                          dataType="wstr"
+                          length="512"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[CODE]"
+                          name="CODE" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[CONTACT_PERSON_EMAIL]"
+                          dataType="wstr"
+                          length="512"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[CONTACT_PERSON_EMAIL]"
+                          name="CONTACT_PERSON_EMAIL" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[CONTACT_PERSON_MOBILE]"
+                          dataType="wstr"
+                          length="512"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[CONTACT_PERSON_MOBILE]"
+                          name="CONTACT_PERSON_MOBILE" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[CONTACT_PERSON_NAME]"
+                          dataType="wstr"
+                          length="512"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[CONTACT_PERSON_NAME]"
+                          name="CONTACT_PERSON_NAME" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[CONTACT_PERSON_PHONE]"
+                          dataType="wstr"
+                          length="512"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[CONTACT_PERSON_PHONE]"
+                          name="CONTACT_PERSON_PHONE" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[EMAIL]"
+                          dataType="wstr"
+                          length="512"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[EMAIL]"
+                          name="EMAIL" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[MOBILE]"
+                          dataType="wstr"
+                          length="512"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[MOBILE]"
+                          name="MOBILE" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[NAME]"
+                          dataType="wstr"
+                          length="512"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[NAME]"
+                          name="NAME" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[PHONE]"
+                          dataType="wstr"
+                          length="512"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[PHONE]"
+                          name="PHONE" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[CITY_ID]"
+                          dataType="numeric"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[CITY_ID]"
+                          name="CITY_ID"
+                          precision="19" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[COMPANY_ID]"
+                          dataType="numeric"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[COMPANY_ID]"
+                          name="COMPANY_ID"
+                          precision="19" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[COUNTRY_ID]"
+                          dataType="numeric"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[COUNTRY_ID]"
+                          name="COUNTRY_ID"
+                          precision="19" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[STATE_ID]"
+                          dataType="numeric"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[STATE_ID]"
+                          name="STATE_ID"
+                          precision="19" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[PARTNER_CODE]"
+                          dataType="wstr"
+                          length="512"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[PARTNER_CODE]"
+                          name="PARTNER_CODE" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[AP_CODE]"
+                          dataType="wstr"
+                          length="512"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[AP_CODE]"
+                          name="AP_CODE" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[GROUP_NAME]"
+                          dataType="wstr"
+                          length="512"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[GROUP_NAME]"
+                          name="GROUP_NAME" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[INT_CODE1]"
+                          dataType="wstr"
+                          length="512"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[INT_CODE1]"
+                          name="INT_CODE1" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[INT_CODE2]"
+                          dataType="wstr"
+                          length="512"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[INT_CODE2]"
+                          name="INT_CODE2" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[INT_NOTE]"
+                          dataType="wstr"
+                          length="512"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[INT_NOTE]"
+                          name="INT_NOTE" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[SAP_CODE]"
+                          dataType="wstr"
+                          length="512"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[SAP_CODE]"
+                          name="SAP_CODE" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[INT_CODE3]"
+                          dataType="wstr"
+                          length="512"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[INT_CODE3]"
+                          name="INT_CODE3" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[REGISTRATION_NO]"
+                          dataType="wstr"
+                          length="512"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[REGISTRATION_NO]"
+                          name="REGISTRATION_NO" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[CREDIT_EXPIRED_DATE]"
+                          dataType="dbTimeStamp"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[CREDIT_EXPIRED_DATE]"
+                          name="CREDIT_EXPIRED_DATE" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[CREDIT_UPDATED_BY]"
+                          dataType="wstr"
+                          length="1020"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[CREDIT_UPDATED_BY]"
+                          name="CREDIT_UPDATED_BY" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[CREDIT_UPDATED_DATE]"
+                          dataType="dbTimeStamp"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[CREDIT_UPDATED_DATE]"
+                          name="CREDIT_UPDATED_DATE" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[CREDIT]"
+                          dataType="numeric"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[CREDIT]"
+                          name="CREDIT"
+                          precision="38"
+                          scale="4" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[CREDIT_AMOUNT]"
+                          dataType="numeric"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[CREDIT_AMOUNT]"
+                          name="CREDIT_AMOUNT"
+                          precision="38"
+                          scale="4" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[SOL_CODE]"
+                          dataType="wstr"
+                          length="1020"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[SOL_CODE]"
+                          name="SOL_CODE" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[EORI_NO]"
+                          dataType="wstr"
+                          length="512"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[EORI_NO]"
+                          name="EORI_NO" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[SHORT_NAME]"
+                          dataType="wstr"
+                          length="1020"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[SHORT_NAME]"
+                          name="SHORT_NAME" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[IS_SHIPPER]"
+                          dataType="numeric"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[IS_SHIPPER]"
+                          name="IS_SHIPPER"
+                          precision="1" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[IS_SUPPLIER]"
+                          dataType="numeric"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[IS_SUPPLIER]"
+                          name="IS_SUPPLIER"
+                          precision="1" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Shipper Table\Fetch Data\save destination"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="save destination"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[SOL_SHIPPER]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=17.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Shipper Table\Fetch Data\save destination.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[Destination DB]"
+                      connectionManagerRefId="Package.ConnectionManagers[Destination DB]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].Columns[SBU]"
+                          cachedDataType="wstr"
+                          cachedLength="3"
+                          cachedName="SBU"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[SBU]"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[SBU]" />
+                        <inputColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].Columns[ID]"
+                          cachedDataType="numeric"
+                          cachedName="ID"
+                          cachedPrecision="19"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[ID]"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[ID]" />
+                        <inputColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].Columns[CREATED_BY]"
+                          cachedDataType="wstr"
+                          cachedLength="512"
+                          cachedName="CREATED_BY"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[CREATED_BY]"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[CREATED_BY]" />
+                        <inputColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].Columns[CREATED_DATE]"
+                          cachedDataType="dbTimeStamp"
+                          cachedName="CREATED_DATE"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[CREATED_DATE]"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[CREATED_DATE]" />
+                        <inputColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].Columns[UPDATED_BY]"
+                          cachedDataType="wstr"
+                          cachedLength="512"
+                          cachedName="UPDATED_BY"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[UPDATED_BY]"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[UPDATED_BY]" />
+                        <inputColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].Columns[UPDATED_DATE]"
+                          cachedDataType="dbTimeStamp"
+                          cachedName="UPDATED_DATE"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[UPDATED_DATE]"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[UPDATED_DATE]" />
+                        <inputColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].Columns[VERSION]"
+                          cachedDataType="numeric"
+                          cachedName="VERSION"
+                          cachedPrecision="10"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[VERSION]"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[VERSION]" />
+                        <inputColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].Columns[ACTIVE]"
+                          cachedDataType="numeric"
+                          cachedName="ACTIVE"
+                          cachedPrecision="1"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[ACTIVE]"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[ACTIVE]" />
+                        <inputColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].Columns[CODE]"
+                          cachedDataType="wstr"
+                          cachedLength="512"
+                          cachedName="CODE"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[CODE]"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[CODE]" />
+                        <inputColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].Columns[CONTACT_PERSON_EMAIL]"
+                          cachedDataType="wstr"
+                          cachedLength="512"
+                          cachedName="CONTACT_PERSON_EMAIL"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[CONTACT_PERSON_EMAIL]"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[CONTACT_PERSON_EMAIL]" />
+                        <inputColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].Columns[CONTACT_PERSON_MOBILE]"
+                          cachedDataType="wstr"
+                          cachedLength="512"
+                          cachedName="CONTACT_PERSON_MOBILE"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[CONTACT_PERSON_MOBILE]"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[CONTACT_PERSON_MOBILE]" />
+                        <inputColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].Columns[CONTACT_PERSON_NAME]"
+                          cachedDataType="wstr"
+                          cachedLength="512"
+                          cachedName="CONTACT_PERSON_NAME"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[CONTACT_PERSON_NAME]"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[CONTACT_PERSON_NAME]" />
+                        <inputColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].Columns[CONTACT_PERSON_PHONE]"
+                          cachedDataType="wstr"
+                          cachedLength="512"
+                          cachedName="CONTACT_PERSON_PHONE"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[CONTACT_PERSON_PHONE]"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[CONTACT_PERSON_PHONE]" />
+                        <inputColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].Columns[EMAIL]"
+                          cachedDataType="wstr"
+                          cachedLength="512"
+                          cachedName="EMAIL"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[EMAIL]"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[EMAIL]" />
+                        <inputColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].Columns[MOBILE]"
+                          cachedDataType="wstr"
+                          cachedLength="512"
+                          cachedName="MOBILE"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[MOBILE]"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[MOBILE]" />
+                        <inputColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].Columns[NAME]"
+                          cachedDataType="wstr"
+                          cachedLength="512"
+                          cachedName="NAME"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[NAME]"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[NAME]" />
+                        <inputColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].Columns[PHONE]"
+                          cachedDataType="wstr"
+                          cachedLength="512"
+                          cachedName="PHONE"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[PHONE]"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[PHONE]" />
+                        <inputColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].Columns[CITY_ID]"
+                          cachedDataType="numeric"
+                          cachedName="CITY_ID"
+                          cachedPrecision="19"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[CITY_ID]"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[CITY_ID]" />
+                        <inputColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].Columns[COMPANY_ID]"
+                          cachedDataType="numeric"
+                          cachedName="COMPANY_ID"
+                          cachedPrecision="19"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[COMPANY_ID]"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[COMPANY_ID]" />
+                        <inputColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].Columns[COUNTRY_ID]"
+                          cachedDataType="numeric"
+                          cachedName="COUNTRY_ID"
+                          cachedPrecision="19"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[COUNTRY_ID]"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[COUNTRY_ID]" />
+                        <inputColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].Columns[STATE_ID]"
+                          cachedDataType="numeric"
+                          cachedName="STATE_ID"
+                          cachedPrecision="19"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[STATE_ID]"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[STATE_ID]" />
+                        <inputColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].Columns[PARTNER_CODE]"
+                          cachedDataType="wstr"
+                          cachedLength="512"
+                          cachedName="PARTNER_CODE"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[PARTNER_CODE]"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[PARTNER_CODE]" />
+                        <inputColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].Columns[AP_CODE]"
+                          cachedDataType="wstr"
+                          cachedLength="512"
+                          cachedName="AP_CODE"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[AP_CODE]"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[AP_CODE]" />
+                        <inputColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].Columns[GROUP_NAME]"
+                          cachedDataType="wstr"
+                          cachedLength="512"
+                          cachedName="GROUP_NAME"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[GROUP_NAME]"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[GROUP_NAME]" />
+                        <inputColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].Columns[INT_CODE1]"
+                          cachedDataType="wstr"
+                          cachedLength="512"
+                          cachedName="INT_CODE1"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[INT_CODE1]"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[INT_CODE1]" />
+                        <inputColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].Columns[INT_CODE2]"
+                          cachedDataType="wstr"
+                          cachedLength="512"
+                          cachedName="INT_CODE2"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[INT_CODE2]"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[INT_CODE2]" />
+                        <inputColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].Columns[INT_NOTE]"
+                          cachedDataType="wstr"
+                          cachedLength="512"
+                          cachedName="INT_NOTE"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[INT_NOTE]"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[INT_NOTE]" />
+                        <inputColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].Columns[SAP_CODE]"
+                          cachedDataType="wstr"
+                          cachedLength="512"
+                          cachedName="SAP_CODE"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[SAP_CODE]"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[SAP_CODE]" />
+                        <inputColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].Columns[INT_CODE3]"
+                          cachedDataType="wstr"
+                          cachedLength="512"
+                          cachedName="INT_CODE3"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[INT_CODE3]"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[INT_CODE3]" />
+                        <inputColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].Columns[REGISTRATION_NO]"
+                          cachedDataType="wstr"
+                          cachedLength="512"
+                          cachedName="REGISTRATION_NO"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[REGISTRATION_NO]"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[REGISTRATION_NO]" />
+                        <inputColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].Columns[CREDIT_EXPIRED_DATE]"
+                          cachedDataType="dbTimeStamp"
+                          cachedName="CREDIT_EXPIRED_DATE"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[CREDIT_EXPIRED_DATE]"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[CREDIT_EXPIRED_DATE]" />
+                        <inputColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].Columns[CREDIT_UPDATED_BY]"
+                          cachedDataType="wstr"
+                          cachedLength="1020"
+                          cachedName="CREDIT_UPDATED_BY"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[CREDIT_UPDATED_BY]"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[CREDIT_UPDATED_BY]" />
+                        <inputColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].Columns[CREDIT_UPDATED_DATE]"
+                          cachedDataType="dbTimeStamp"
+                          cachedName="CREDIT_UPDATED_DATE"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[CREDIT_UPDATED_DATE]"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[CREDIT_UPDATED_DATE]" />
+                        <inputColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].Columns[CREDIT]"
+                          cachedDataType="numeric"
+                          cachedName="CREDIT"
+                          cachedPrecision="38"
+                          cachedScale="4"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[CREDIT]"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[CREDIT]" />
+                        <inputColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].Columns[CREDIT_AMOUNT]"
+                          cachedDataType="numeric"
+                          cachedName="CREDIT_AMOUNT"
+                          cachedPrecision="38"
+                          cachedScale="4"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[CREDIT_AMOUNT]"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[CREDIT_AMOUNT]" />
+                        <inputColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].Columns[SOL_CODE]"
+                          cachedDataType="wstr"
+                          cachedLength="1020"
+                          cachedName="SOL_CODE"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[SOL_CODE]"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[SOL_CODE]" />
+                        <inputColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].Columns[EORI_NO]"
+                          cachedDataType="wstr"
+                          cachedLength="512"
+                          cachedName="EORI_NO"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[EORI_NO]"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[EORI_NO]" />
+                        <inputColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].Columns[SHORT_NAME]"
+                          cachedDataType="wstr"
+                          cachedLength="1020"
+                          cachedName="SHORT_NAME"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[SHORT_NAME]"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[SHORT_NAME]" />
+                        <inputColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].Columns[IS_SHIPPER]"
+                          cachedDataType="numeric"
+                          cachedName="IS_SHIPPER"
+                          cachedPrecision="1"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[IS_SHIPPER]"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[IS_SHIPPER]" />
+                        <inputColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].Columns[IS_SUPPLIER]"
+                          cachedDataType="numeric"
+                          cachedName="IS_SUPPLIER"
+                          cachedPrecision="1"
+                          externalMetadataColumnId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[IS_SUPPLIER]"
+                          lineageId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output].Columns[IS_SUPPLIER]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[SBU]"
+                          dataType="wstr"
+                          length="3"
+                          name="SBU" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[ID]"
+                          dataType="numeric"
+                          name="ID"
+                          precision="19" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[CREATED_BY]"
+                          dataType="wstr"
+                          length="512"
+                          name="CREATED_BY" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[CREATED_DATE]"
+                          dataType="dbTimeStamp"
+                          name="CREATED_DATE" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[UPDATED_BY]"
+                          dataType="wstr"
+                          length="512"
+                          name="UPDATED_BY" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[UPDATED_DATE]"
+                          dataType="dbTimeStamp"
+                          name="UPDATED_DATE" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[VERSION]"
+                          dataType="numeric"
+                          name="VERSION"
+                          precision="10" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[ACTIVE]"
+                          dataType="numeric"
+                          name="ACTIVE"
+                          precision="1" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[CODE]"
+                          dataType="wstr"
+                          length="512"
+                          name="CODE" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[CONTACT_PERSON_EMAIL]"
+                          dataType="wstr"
+                          length="512"
+                          name="CONTACT_PERSON_EMAIL" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[CONTACT_PERSON_MOBILE]"
+                          dataType="wstr"
+                          length="512"
+                          name="CONTACT_PERSON_MOBILE" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[CONTACT_PERSON_NAME]"
+                          dataType="wstr"
+                          length="512"
+                          name="CONTACT_PERSON_NAME" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[CONTACT_PERSON_PHONE]"
+                          dataType="wstr"
+                          length="512"
+                          name="CONTACT_PERSON_PHONE" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[EMAIL]"
+                          dataType="wstr"
+                          length="512"
+                          name="EMAIL" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[MOBILE]"
+                          dataType="wstr"
+                          length="512"
+                          name="MOBILE" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[NAME]"
+                          dataType="wstr"
+                          length="512"
+                          name="NAME" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[PHONE]"
+                          dataType="wstr"
+                          length="512"
+                          name="PHONE" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[CITY_ID]"
+                          dataType="numeric"
+                          name="CITY_ID"
+                          precision="19" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[COMPANY_ID]"
+                          dataType="numeric"
+                          name="COMPANY_ID"
+                          precision="19" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[COUNTRY_ID]"
+                          dataType="numeric"
+                          name="COUNTRY_ID"
+                          precision="19" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[STATE_ID]"
+                          dataType="numeric"
+                          name="STATE_ID"
+                          precision="19" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[PARTNER_CODE]"
+                          dataType="wstr"
+                          length="512"
+                          name="PARTNER_CODE" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[AP_CODE]"
+                          dataType="wstr"
+                          length="512"
+                          name="AP_CODE" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[GROUP_NAME]"
+                          dataType="wstr"
+                          length="512"
+                          name="GROUP_NAME" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[INT_CODE1]"
+                          dataType="wstr"
+                          length="512"
+                          name="INT_CODE1" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[INT_CODE2]"
+                          dataType="wstr"
+                          length="512"
+                          name="INT_CODE2" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[INT_NOTE]"
+                          dataType="wstr"
+                          length="512"
+                          name="INT_NOTE" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[SAP_CODE]"
+                          dataType="wstr"
+                          length="512"
+                          name="SAP_CODE" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[INT_CODE3]"
+                          dataType="wstr"
+                          length="512"
+                          name="INT_CODE3" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[REGISTRATION_NO]"
+                          dataType="wstr"
+                          length="512"
+                          name="REGISTRATION_NO" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[CREDIT_EXPIRED_DATE]"
+                          dataType="dbTimeStamp"
+                          name="CREDIT_EXPIRED_DATE" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[CREDIT_UPDATED_BY]"
+                          dataType="wstr"
+                          length="1020"
+                          name="CREDIT_UPDATED_BY" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[CREDIT_UPDATED_DATE]"
+                          dataType="dbTimeStamp"
+                          name="CREDIT_UPDATED_DATE" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[CREDIT]"
+                          dataType="numeric"
+                          name="CREDIT"
+                          precision="38"
+                          scale="4" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[CREDIT_AMOUNT]"
+                          dataType="numeric"
+                          name="CREDIT_AMOUNT"
+                          precision="38"
+                          scale="4" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[SOL_CODE]"
+                          dataType="wstr"
+                          length="1020"
+                          name="SOL_CODE" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[EORI_NO]"
+                          dataType="wstr"
+                          length="512"
+                          name="EORI_NO" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[SHORT_NAME]"
+                          dataType="wstr"
+                          length="1020"
+                          name="SHORT_NAME" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[IS_SHIPPER]"
+                          dataType="numeric"
+                          name="IS_SHIPPER"
+                          precision="1" />
+                        <externalMetadataColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input].ExternalColumns[IS_SUPPLIER]"
+                          dataType="numeric"
+                          name="IS_SUPPLIER"
+                          precision="1" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Shipper Table\Fetch Data\save destination.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Shipper Table\Fetch Data\save destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Shipper Table\Fetch Data\save destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Shipper Table\Fetch Data\save destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Shipper Table\Fetch Data.Paths[ADO NET Source Output]"
+                  endId="Package\Shipper Table\Fetch Data\save destination.Inputs[OLE DB Destination Input]"
+                  name="ADO NET Source Output"
+                  startId="Package\Shipper Table\Fetch Data\Fetch Source Data.Outputs[ADO NET Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Shipper Table\Truncate Shipper"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{0AF392CB-272F-4028-94EF-F5863A18A3D3}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Truncate Shipper"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:PropertyExpression
+            DTS:Name="SqlStatementSource">"delete from sol_shipper where SBU ='"+ @[User::SBU] +"'"</DTS:PropertyExpression>
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{4868BCFF-8955-4EED-A6CE-762F2D572382}"
+              SQLTask:SqlStatementSource="delete from sol_shipper where SBU ='EFL'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Shipper Table.PrecedenceConstraints[Constraint]"
+          DTS:CreationName=""
+          DTS:DTSID="{64C75C40-4CC5-4D65-ADF3-168E9E4768E3}"
+          DTS:From="Package\Shipper Table\Truncate Shipper"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:To="Package\Shipper Table\Fetch Data" />
+      </DTS:PrecedenceConstraints>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Shipper Table\Truncate Shipper"
+          TopLeft="36.8333333333333,16.6666666666667" />
+        <NodeLayout
+          Size="133,42"
+          Id="Package\Shipper Table\Fetch Data"
+          TopLeft="47,104" />
+        <EdgeLayout
+          Id="Package\Shipper Table.PrecedenceConstraints[Constraint]"
+          TopLeft="115.916666666667,58.6666666666667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,45.3333333333333"
+              Start="0,0"
+              End="0,37.8333333333333">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,37.8333333333333" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="244,196"
+          Size="244,239"
+          Id="Package\Shipper Table"
+          TopLeft="89.1666666666667,110.833333333333" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Shipper Table\Fetch Data">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="170,42"
+          Id="Package\Shipper Table\Fetch Data\Fetch Source Data"
+          TopLeft="158,150" />
+        <NodeLayout
+          Size="158,42"
+          Id="Package\Shipper Table\Fetch Data\save destination"
+          TopLeft="167,255" />
+        <EdgeLayout
+          Id="Package\Shipper Table\Fetch Data.Paths[ADO NET Source Output]"
+          TopLeft="244.5,192">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,63"
+              Start="0,0"
+              End="0,55.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,55.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Shipper Table\Fetch Data\save destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
